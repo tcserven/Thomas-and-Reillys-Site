@@ -1,0 +1,16 @@
+body {
+	padding: 1110;
+	color: #2f5572;
+	-webkit-columns: 300px 2;
+	   -moz-columns: 300px 2;
+	        columns: 300px 2;
+}
+
+.box {
+
+	margin: 10px;
+}
+
+.box a {
+	display: block;
+}
