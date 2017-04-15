@@ -426,11 +426,29 @@ template {
   display: none;
 }
 
+/*larger than smartphone*/
+
+/*larger than tablet*/
+
+/*larger than desktop*/
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
-body {
-	color: #2f5572;
+* {
+	box-sizing: border-box;
+}
+
+* {
+	/*color: $mainBlue;*/
+	color: red;
+}
+
+@media(min-width: 530px) {
+
+  * {
+    color: blue;
+  }
 }
