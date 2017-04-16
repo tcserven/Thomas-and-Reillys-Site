@@ -3,6 +3,6 @@
 	color: red;
 
 	@mixin atSmall {
-		color: blue;
+		color: red;
 	}
 }

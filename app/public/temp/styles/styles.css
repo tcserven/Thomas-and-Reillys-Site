@@ -449,6 +449,6 @@ template {
 @media(min-width: 530px) {
 
   * {
-    color: blue;
+    color: red;
   }
 }
