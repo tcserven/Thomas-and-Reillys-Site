@@ -13,7 +13,7 @@ gulp.task('watch', function() {
 	});
 
 	// changes in our html
-	watch('./app/public/index.html', function() {
+	watch('./app/public/**/**/*.html', function() {
 		// gulp.start('html');
 		browserSync.reload();
 	});
