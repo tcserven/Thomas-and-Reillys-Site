@@ -1,8 +1,0 @@
-* {
-	/*color: $mainBlue;*/
-	color: red;
-
-	@mixin atSmall {
-		color: green;
-	}
-}

@@ -441,14 +441,141 @@ template {
 	box-sizing: border-box;
 }
 
-* {
-	/*color: $mainBlue;*/
-	color: red;
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+.large-background {
+	position: relative;
+	border-bottom: 10px solid rgb(0, 185, 81);
+
+}
+
+.large-background__image {
+  display: block;
+}
+
+.large-background__text-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+}
+
+.large-background__title {
+  color: rgb(0, 185, 81);
+  font-weight: 100;
+  font-size: 2.8rem;
+  margin: 0 0 10px;
+  font-family: 'Henny Penny', cursive;
+  text-shadow: 1.5px 1.5px 0 black;
 }
 
 @media(min-width: 530px) {
 
-  * {
-    color: green;
+  .large-background__title {
+    font-size: 4rem;
   }
+}
+
+@media(min-width: 800px) {
+
+  .large-background__title {
+    font-size: 5.5rem;
+    text-shadow: 2.5px 2.5px 0 black;
+  }
+}
+
+.large-background__subtitle {
+  color: rgb(0, 185, 81);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  text-shadow: 1.5px 1.5px 0 black;
+}
+
+@media(min-width: 530px) {
+
+  .large-background__subtitle {
+    font-size: 2rem;
+    text-shadow: 2.5px 2.5px 0 black;
+  }
+}
+
+@media(min-width: 800px) {
+
+  .large-background__subtitle {
+    font-size: 2.5rem;
+  }
+}
+
+.large-background__description {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 0 black;
+}
+
+@media(min-width: 530px) {
+
+  .large-background__description {
+    font-size: 1.4rem;
+    text-shadow: 2.5px 2.5px 0 black;
+  }
+}
+
+@media(min-width: 800px) {
+
+  .large-background__description {
+    font-size: 2.2rem;
+  }
+}
+
+.wrapper {
+	/*background: green;*/
+	overflow: hidden;
+	padding-left: 18px;
+	padding-right: 18px;
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.site-nav {
+	position: absolute;
+	background-color: rgba(0, 185, 81, 0.55);
+	z-index: 2;
+	width: 100%;
+	padding: 8px 0;
+}
+
+.site-nav__logo {/*position: absolute;*//*transform: scale(0.5);*/
+}
+
+.site-nav ul {
+  text-align: center;
+}
+
+.site-nav li {
+  list-style: none;
+  display: inline-block;
+  width: 13%;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.site-nav a:hover {
+  color: red;
 }
