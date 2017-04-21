@@ -4,10 +4,10 @@
 	z-index: 2;
 	width: 100%;
 	padding: 20px 0;
-	height: 42px;
+	height: 6px;
 
 	@mixin atSmall {
-		height: 62px;
+		height: 22px;
 	}
 
 	&__logo {
@@ -29,12 +29,12 @@
 	}
 
 	ul {
-		width: 50%;
+		width: 45%;
 		@mixin clearfix;
 	}
 
 	&__links--left-side {
-		
+		text-align: left;
 		float: left;
 	}
 

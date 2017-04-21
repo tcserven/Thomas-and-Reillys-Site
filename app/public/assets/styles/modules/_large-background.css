@@ -12,10 +12,10 @@
 		top: 50%;
 		transform: translateY(-50%);
 		text-align: center;
-		padding-top: 42px;
+		padding-top: 6px;
 
 		@mixin atSmall {
-			padding-top: 62px;
+			padding-top: 22px;
 		}
 	}
 
