@@ -12,14 +12,12 @@
 		top: 50%;
 		transform: translateY(-50%);
 		text-align: center;
-<<<<<<< HEAD
 		padding-top: 6px;
 
 		@mixin atSmall {
-			padding-top: 22px;
+			padding-top: 60px;
 		}
-=======
->>>>>>> parent of 3552554... Finish nav styling
+
 	}
 
 	&__title {

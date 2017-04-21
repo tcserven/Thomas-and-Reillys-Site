@@ -12,9 +12,21 @@
 	}
 }
 
+@define-mixin at880 {
+	@media(min-width: 880px) {
+		@mixin-content;
+	}
+}
+
 /*larger than desktop*/
 @define-mixin atLarge {
 	@media(min-width: 980px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atBiggest {
+	@media(min-width: 1200px) {
 		@mixin-content;
 	}
 }
