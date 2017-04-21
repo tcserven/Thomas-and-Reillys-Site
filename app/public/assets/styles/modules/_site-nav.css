@@ -3,32 +3,24 @@
 	background-color: rgba(0, 185, 81, 0.55);
 	z-index: 2;
 	width: 100%;
+<<<<<<< HEAD
 	padding: 20px 0;
 	height: 6px;
 
 	@mixin atSmall {
 		height: 22px;
 	}
+=======
+	padding: 8px 0;
+>>>>>>> parent of 3552554... Finish nav styling
 
 	&__logo {
-		position: absolute;
-		/*background-color: $mainGreen;*/
-		padding: 10px;
-		/*how to scale the image*/
-		/*max-width: 300%;
-		max-height: 300%;*/
-		/*how to center the image*/
-		transform: translateX(-50%) scale(0.19);
-		transform-origin: 50% 0;
-		top: 0;
-		left: 50%;
-
-		@mixin atSmall {
-			transform: translateX(-50%) scale(0.27);
-		}
+		/*position: absolute;*/
+		/*transform: scale(0.5);*/
 	}
 
 	ul {
+<<<<<<< HEAD
 		width: 45%;
 		@mixin clearfix;
 	}
@@ -41,47 +33,28 @@
 	&__links--right-side {
 		text-align: right;
 		float: right;
+=======
+		text-align: center;
+>>>>>>> parent of 3552554... Finish nav styling
 	}
 
 	li {
 		list-style: none;
-		display: none;
-		width: 28%;
-		text-align: center;
+		display: inline-block;
+		width: 13%;
 		
-		@mixin atMedium {
-			display: inline-block;
-		}
 	}
 
 	a {
 		text-decoration: none;
-		font-size: 1rem;
+		font-size: 1.3rem;
 		font-weight: 700;
 		color: white;
 		letter-spacing: 1px;
-
-		@mixin atLarge {
-			font-size: 1.2rem;
-		}
 
 	}
 
 	a:hover {
 		color: red;
-	}
-
-	&__menu-icon {
-		height: 20px;
-		width: 20px;
-		background-color: white;
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		display: block;
-
-		@mixin atMedium {
-			display: none;
-		}
 	}
 }

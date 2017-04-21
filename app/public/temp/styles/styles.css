@@ -461,6 +461,7 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   text-align: center;
+<<<<<<< HEAD
   padding-top: 6px;
 }
 
@@ -469,6 +470,8 @@ body {
   .large-background__text-wrapper {
     padding-top: 22px;
   }
+=======
+>>>>>>> parent of 3552554... Finish nav styling
 }
 
 .large-background__title {
@@ -555,6 +558,7 @@ body {
 	background-color: rgba(0, 185, 81, 0.55);
 	z-index: 2;
 	width: 100%;
+<<<<<<< HEAD
 	padding: 20px 0;
 	height: 6px;
 }
@@ -576,17 +580,16 @@ body {
           transform-origin: 50% 0;
   top: 0;
   left: 50%;
+=======
+	padding: 8px 0;
+>>>>>>> parent of 3552554... Finish nav styling
 }
 
-@media(min-width: 530px) {
-
-  .site-nav__logo {
-    -webkit-transform: translateX(-50%) scale(0.27);
-            transform: translateX(-50%) scale(0.27);
-  }
+.site-nav__logo {/*position: absolute;*//*transform: scale(0.5);*/
 }
 
 .site-nav ul {
+<<<<<<< HEAD
   width: 45%;
 }
 
@@ -604,30 +607,26 @@ body {
 .site-nav__links--right-side {
   text-align: right;
   float: right;
+=======
+  text-align: center;
+>>>>>>> parent of 3552554... Finish nav styling
 }
 
 .site-nav li {
   list-style: none;
-  display: none;
-  width: 28%;
-  text-align: center;
-}
-
-@media(min-width: 800px) {
-
-  .site-nav li {
-    display: inline-block;
-  }
+  display: inline-block;
+  width: 13%;
 }
 
 .site-nav a {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: white;
   letter-spacing: 1px;
 }
 
+<<<<<<< HEAD
 @media(min-width: 980px) {
 
   .site-nav a {
@@ -635,23 +634,8 @@ body {
   }
 }
 
+=======
+>>>>>>> parent of 3552554... Finish nav styling
 .site-nav a:hover {
   color: red;
-}
-
-.site-nav__menu-icon {
-  height: 20px;
-  width: 20px;
-  background-color: white;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: block;
-}
-
-@media(min-width: 800px) {
-
-  .site-nav__menu-icon {
-    display: none;
-  }
 }
