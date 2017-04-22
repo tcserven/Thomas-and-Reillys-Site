@@ -441,7 +441,7 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	overflow-y: scroll;
+	/*overflow-y: scroll;*/
 }
 
 .large-background {
@@ -577,7 +577,7 @@ body {
 	background-color: rgba(0, 185, 81, 0.55);
 	z-index: 2;
 	width: 100%;
-	padding: 20px 0;
+	padding: 12px 0;
 }
 
 @media(min-width: 880px) {
@@ -600,45 +600,49 @@ body {
 @media(min-width: 880px) {
 
   .site-nav__logo {
-    -webkit-transform: translateX(-50%) scale(0.3);
-            transform: translateX(-50%) scale(0.3);
+    -webkit-transform: translateX(-50%) scale(0.32);
+            transform: translateX(-50%) scale(0.32);
   }
 }
 
-.site-nav ul {
-  width: 45%;
+.site-nav__menu ul {
+  width: 49.5%;
+  list-style: none;
+  padding: 0;
   margin: 0;
+  display: inline-block;
 }
 
-.site-nav ul::after {
+.site-nav__menu ul::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.site-nav__links--left-side {
-  float: left;
-}
-
-.site-nav__links--right-side {
-  float: right;
-  text-align: right;
-}
-
-.site-nav li {
-  list-style: none;
-  display: none;
+.site-nav__menu li {
+  display: inline-block;
   width: 28%;
   text-align: center;
+  display: none;
 }
-
-/*went manual here to go to the hamburger menu earlier to not break the li's*/
 
 @media(min-width: 880px) {
 
-  .site-nav li {
+  .site-nav__menu li {
     display: inline-block;
   }
+}
+
+.site-nav__menu--left li {
+  float: left;
+}
+
+.site-nav__menu--right li {
+  float: right;
+}
+
+.site-nav__menu--left li:nth-child(1) {
+  margin-left: 30px;
 }
 
 .site-nav a {
