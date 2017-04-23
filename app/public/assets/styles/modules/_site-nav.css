@@ -3,11 +3,11 @@
 	background-color: rgba(0, 185, 81, 0.55);
 	z-index: 2;
 	width: 100%;
-	padding: 12px 0;
+	/*padding: 12px 0;*/
 
-	@mixin at880 {
+/*	@mixin at880 {
 		padding: 20px 0;
-	}
+	}*/
 
 
 	&__logo {
@@ -15,7 +15,7 @@
 		left: 50%;
 		transform: translateX(-50%) scale(0.2);
 		transform-origin: 50% 0;
-		top: 0;
+		top: 5px;
 
 		@mixin at880 {
 			transform: translateX(-50%) scale(0.32);
@@ -23,15 +23,59 @@
 	}
 
 	&__menu ul {
+		padding: 0;
+	}
+
+	&__menu ul li {
+		display: inline-block;
+		width: 12%;
+		text-align: center;
+		padding: 10px 0 10px;
+		display: none;
+
+		/*@mixin atBiggest {
+			margin: 0 4% 0 0;
+		}*/
+
+		@mixin at880 {
+			display: inline-block;
+		}
+	}
+
+	&__menu ul li:nth-child(3) {
+			margin: 0 10% 0 0;
+			@mixin atLarge {
+				margin: 0 13% 0 0;
+			}	
+	}
+
+	&__menu ul li:nth-child(1) {
+		margin: 0 0 0 5%;
+			@mixin atLarge {
+				margin: 0;
+			}	
+	}
+
+	&__menu ul li:nth-child(4) {
+			margin: 0 0 0 9%;
+			@mixin atLarge {
+				margin: 0 0 0 13%;
+			}	
+	}
+
+	
+	
+
+	/*&__menu ul {
 		width: 49.5%;
 		list-style: none;
 		padding: 0;
 		margin: 0;
 		display: inline-block;
 		@mixin clearfix	
-	}
+	}*/
 
-	&__menu li {
+	/*&__menu li {
 		display: inline-block;
 		width: 28%;
 		text-align: center;
@@ -39,20 +83,7 @@
 		@mixin at880 {
 			display: inline-block;
 		}
-	}
-
-
-	&__menu--left li {
-		float: left;
-	}
-
-	&__menu--right li {
-		float: right;
-	}
-
-	&__menu--left li:nth-child(1) {
-		margin-left: 30px;
-	}
+	}*/
 
 
 	a {

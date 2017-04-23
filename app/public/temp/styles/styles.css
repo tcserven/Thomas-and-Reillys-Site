@@ -577,15 +577,11 @@ body {
 	background-color: rgba(0, 185, 81, 0.55);
 	z-index: 2;
 	width: 100%;
-	padding: 12px 0;
 }
 
-@media(min-width: 880px) {
-
-  .site-nav {
-    padding: 20px 0;
-  }
-}
+/*	@mixin at880 {
+		padding: 20px 0;
+	}*/
 
 .site-nav__logo {
   position: absolute;
@@ -594,7 +590,7 @@ body {
           transform: translateX(-50%) scale(0.2);
   -webkit-transform-origin: 50% 0;
           transform-origin: 50% 0;
-  top: 0;
+  top: 5px;
 }
 
 @media(min-width: 880px) {
@@ -605,45 +601,73 @@ body {
   }
 }
 
+/*padding: 12px 0;*/
+
 .site-nav__menu ul {
-  width: 49.5%;
-  list-style: none;
   padding: 0;
-  margin: 0;
-  display: inline-block;
 }
 
-.site-nav__menu ul::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.site-nav__menu li {
+.site-nav__menu ul li {
   display: inline-block;
-  width: 28%;
+  width: 12%;
   text-align: center;
+  padding: 10px 0 10px;
   display: none;
 }
 
+/*@mixin atBiggest {
+			margin: 0 4% 0 0;
+		}*/
+
 @media(min-width: 880px) {
 
-  .site-nav__menu li {
+  .site-nav__menu ul li {
     display: inline-block;
   }
 }
 
-.site-nav__menu--left li {
-  float: left;
+.site-nav__menu ul li:nth-child(3) {
+  margin: 0 10% 0 0;
 }
 
-.site-nav__menu--right li {
-  float: right;
+@media(min-width: 980px) {
+
+  .site-nav__menu ul li:nth-child(3) {
+    margin: 0 13% 0 0;
+  }
 }
 
-.site-nav__menu--left li:nth-child(1) {
-  margin-left: 30px;
+.site-nav__menu ul li:nth-child(1) {
+  margin: 0 0 0 5%;
 }
+
+@media(min-width: 980px) {
+
+  .site-nav__menu ul li:nth-child(1) {
+    margin: 0;
+  }
+}
+
+.site-nav__menu ul li:nth-child(4) {
+  margin: 0 0 0 9%;
+}
+
+@media(min-width: 980px) {
+
+  .site-nav__menu ul li:nth-child(4) {
+    margin: 0 0 0 13%;
+  }
+}
+
+/*&__menu li {
+		display: inline-block;
+		width: 28%;
+		text-align: center;
+		display: none;
+		@mixin at880 {
+			display: inline-block;
+		}
+	}*/
 
 .site-nav a {
   text-decoration: none;
@@ -659,6 +683,15 @@ body {
     font-size: 1.3rem;
   }
 }
+
+/*&__menu ul {
+		width: 49.5%;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+		@mixin clearfix	
+	}*/
 
 .site-nav a:hover {
   color: red;
