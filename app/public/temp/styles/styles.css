@@ -579,10 +579,6 @@ body {
 	width: 100%;
 }
 
-/*	@mixin at880 {
-		padding: 20px 0;
-	}*/
-
 .site-nav__logo {
   position: absolute;
   left: 50%;
@@ -601,23 +597,16 @@ body {
   }
 }
 
-/*padding: 12px 0;*/
-
 .site-nav__menu ul {
   padding: 0;
 }
 
 .site-nav__menu ul li {
-  display: inline-block;
-  width: 12%;
+  display: inline-block;/*width: 10%;*/
   text-align: center;
-  padding: 10px 0 10px;
+  padding: 10px 15px;
   display: none;
 }
-
-/*@mixin atBiggest {
-			margin: 0 4% 0 0;
-		}*/
 
 @media(min-width: 880px) {
 
@@ -627,51 +616,58 @@ body {
 }
 
 .site-nav__menu ul li:nth-child(3) {
-  margin: 0 10% 0 0;
+  margin: 0 15% 0 0;
 }
 
-@media(min-width: 980px) {
+@media(min-width: 1200px) {
 
   .site-nav__menu ul li:nth-child(3) {
-    margin: 0 13% 0 0;
+    margin: 0 17% 0 0;
   }
 }
 
-.site-nav__menu ul li:nth-child(1) {
-  margin: 0 0 0 5%;
-}
-
-@media(min-width: 980px) {
-
-  .site-nav__menu ul li:nth-child(1) {
-    margin: 0;
-  }
-}
+/*&__menu--margin-left {
+		margin: 0 0 0 5%;
+	}*/
 
 .site-nav__menu ul li:nth-child(4) {
-  margin: 0 0 0 9%;
+  margin: 0 0 0 15%;
 }
 
-@media(min-width: 980px) {
+@media(min-width: 1200px) {
 
   .site-nav__menu ul li:nth-child(4) {
-    margin: 0 0 0 13%;
+    margin: 0 0 0 17%;
   }
 }
 
-/*&__menu li {
-		display: inline-block;
-		width: 28%;
-		text-align: center;
-		display: none;
-		@mixin at880 {
-			display: inline-block;
-		}
-	}*/
+.site-nav__menu ul ul {
+  display: block;
+  position: absolute;
+  background-color: #CCC;
+  margin-top: 26px;
+  padding: 0 5px 0;
+}
+
+.site-nav__menu ul ul li {
+  text-align: left;
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.site-nav__menu ul ul li a {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.site-nav__menu ul li:hover ul {
+  display: block;
+}
 
 .site-nav a {
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: white;
   letter-spacing: 1px;
@@ -680,18 +676,9 @@ body {
 @media(min-width: 1200px) {
 
   .site-nav a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
-
-/*&__menu ul {
-		width: 49.5%;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		display: inline-block;
-		@mixin clearfix	
-	}*/
 
 .site-nav a:hover {
   color: red;

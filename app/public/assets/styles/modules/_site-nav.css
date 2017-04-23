@@ -3,11 +3,6 @@
 	background-color: rgba(0, 185, 81, 0.55);
 	z-index: 2;
 	width: 100%;
-	/*padding: 12px 0;*/
-
-/*	@mixin at880 {
-		padding: 20px 0;
-	}*/
 
 
 	&__logo {
@@ -28,14 +23,11 @@
 
 	&__menu ul li {
 		display: inline-block;
-		width: 12%;
+		/*width: 10%;*/
 		text-align: center;
-		padding: 10px 0 10px;
+		padding: 10px 15px;
 		display: none;
 
-		/*@mixin atBiggest {
-			margin: 0 4% 0 0;
-		}*/
 
 		@mixin at880 {
 			display: inline-block;
@@ -43,58 +35,61 @@
 	}
 
 	&__menu ul li:nth-child(3) {
-			margin: 0 10% 0 0;
-			@mixin atLarge {
-				margin: 0 13% 0 0;
+			margin: 0 15% 0 0;
+			@mixin atBiggest {
+				margin: 0 17% 0 0;
 			}	
 	}
 
-	&__menu ul li:nth-child(1) {
+
+	/*&__menu--margin-left {
 		margin: 0 0 0 5%;
-			@mixin atLarge {
-				margin: 0;
-			}	
-	}
+	}*/
 
 	&__menu ul li:nth-child(4) {
-			margin: 0 0 0 9%;
-			@mixin atLarge {
-				margin: 0 0 0 13%;
+			margin: 0 0 0 15%;
+			@mixin atBiggest {
+				margin: 0 0 0 17%;
 			}	
 	}
 
-	
-	
 
-	/*&__menu ul {
-		width: 49.5%;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		display: inline-block;
-		@mixin clearfix	
-	}*/
+	&__menu ul ul {
+		display: block;
+		position: absolute;
+		background-color: #CCC;
+		margin-top: 26px;
+		padding: 0 5px 0;
+	}
 
-	/*&__menu li {
-		display: inline-block;
-		width: 28%;
-		text-align: center;
-		display: none;
-		@mixin at880 {
-			display: inline-block;
-		}
-	}*/
+	&__menu ul ul li {
+		text-align: left;
+		display: block;
+		width: 100%;
+		padding: 5px 10px;
+	}
+
+	&__menu ul ul li a {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+	
+	&__menu ul li:hover ul {
+		display: block;
+	}
+	
 
 
 	a {
 		text-decoration: none;
-		font-size: 1.1rem;
+		font-size: 0.95rem;
 		font-weight: 700;
 		color: white;
 		letter-spacing: 1px;
 
 		@mixin atBiggest {
-			font-size: 1.3rem;
+			font-size: 1.2rem;
 		}
 
 	}
