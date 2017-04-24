@@ -55,10 +55,15 @@
 	&__menu--container-ul ul {
 		list-style: none;
 		padding: 0;
-		display: none;
+		display: block;
 		position: absolute;
 		margin: 70px 0 0 55px;
 		background-color: rgba(0,0,0,0.7);
+
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0.3s, opacity 0.3s ease-in;
+
 	}
 
 	&__menu--container-ul ul li {
@@ -69,11 +74,14 @@
 
 		@mixin at880 {
 			display: block;
+
 		}
 	}
 	
 	&__menu--container-ul li:hover ul {
 		display: block;
+		visibility: visible;
+		opacity: 1;
 	}
 
 	a {
@@ -90,7 +98,7 @@
 	}
 
 	&__menu--container-ul ul li a {
-		color: green;
+		/*color: green;*/
 		font-size: 0.9rem;
 	}
 
