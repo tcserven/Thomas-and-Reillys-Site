@@ -722,3 +722,8 @@ body {
     display: none;
   }
 }
+
+.site-footer {
+	background-color: rgb(0, 185, 81);
+	color: white;
+}
