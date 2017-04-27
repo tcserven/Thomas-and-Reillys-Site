@@ -662,7 +662,6 @@ body {
   background-color: rgba(0,0,0,0.7);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 0.3s, opacity 0.3s ease-in;
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
@@ -855,10 +854,12 @@ body {
 }
 
 .map__descriptions-picture {
-  border-radius: 40%;
+  border-radius: 50%;
   -webkit-transform: scale(0.92);
           transform: scale(0.92);
 }
+
+.map__descriptions--row {}
 
 .map__header {
   text-align: center;
@@ -882,4 +883,8 @@ body {
 
 .map__list {
   text-align: center;
+}
+
+.map__list h2 {
+  margin: 0;
 }

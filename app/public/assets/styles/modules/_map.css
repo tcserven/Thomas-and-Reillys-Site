@@ -7,8 +7,12 @@
 		flex-grow: 1;
 
 		&-picture {
-			border-radius: 40%;
+			border-radius: 50%;
 			transform: scale(0.92);
+		}
+
+		&--row {
+
 		}
 
 	}
@@ -31,5 +35,10 @@
 
 	&__list {
 		text-align: center;
+
+
+		& h2 {
+			margin: 0;
+		}
 	}
 }
