@@ -827,3 +827,27 @@ body {
   margin: 0 0 5px 0;
   font-size: 0.8rem;
 }
+
+.welcome__heading {/*color: white;*/
+  text-align: center;/*background-color: rgba(50, 14, 59, 0.8); */
+  margin: 50px auto;
+  padding: 50px;
+  width: 400px;
+  border: 3px solid black;
+  border-radius: 25px;
+  box-shadow: 0 0 5px 5px #777;
+}
+
+.welcome__title {
+	
+
+
+
+}
+
+.map {
+	
+
+
+
+}
