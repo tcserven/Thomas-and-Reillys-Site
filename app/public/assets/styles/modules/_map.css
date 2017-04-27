@@ -1,6 +1,35 @@
 .map {
-	
+	&__container {
+		display: flex;	
+	}
 
+	&__descriptions {
+		flex-grow: 1;
 
+		&-picture {
+			border-radius: 40%;
+			transform: scale(0.92);
+		}
 
+	}
+
+	&__header {
+		text-align: center;
+		margin: 0 0 5px 0;
+	}
+
+	&__descriptions--row {
+		display: flex;	
+		flex-wrap: wrap;
+	}
+
+	&__country {
+		flex: 1 0 45%;
+		padding: 10px;
+
+	}	
+
+	&__list {
+		text-align: center;
+	}
 }
