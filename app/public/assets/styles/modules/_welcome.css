@@ -1,9 +1,11 @@
 .welcome {
 
+	background-color: #DDD;
+
 	&__heading {
 		/*color: white;*/
 		text-align: center;
-		/*background-color: rgba(50, 14, 59, 0.8); */
+		background-color: white;
 		margin: 50px auto;
 		padding: 40px;
 		width: 400px;

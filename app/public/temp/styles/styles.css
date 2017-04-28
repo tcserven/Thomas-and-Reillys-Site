@@ -574,6 +574,10 @@ body {
 	margin-right: auto;
 }
 
+.wrapper--wide {
+  max-width: 1436px;
+}
+
 .site-nav {
 	position: absolute;
 	background-color: rgba(0, 185, 81, 0.55);
@@ -662,6 +666,7 @@ body {
   background-color: rgba(0,0,0,0.7);
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: visibility 0.3s, opacity 0.3s ease-in;
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
@@ -829,8 +834,14 @@ body {
   font-size: 0.8rem;
 }
 
+.welcome {
+
+	background-color: #DDD;
+}
+
 .welcome__heading {/*color: white;*/
-  text-align: center;/*background-color: rgba(50, 14, 59, 0.8); */
+  text-align: center;
+  background-color: white;
   margin: 50px auto;
   padding: 40px;
   width: 400px;
@@ -859,11 +870,13 @@ body {
           transform: scale(0.92);
 }
 
-.map__descriptions--row {}
+.map__image-of-sa {
+  margin-left: 50px;
+}
 
 .map__header {
   text-align: center;
-  margin: 0 0 5px 0;
+  margin: 40px 0;
 }
 
 .map__descriptions--row {
@@ -879,6 +892,12 @@ body {
       -ms-flex: 1 0 45%;
           flex: 1 0 45%;
   padding: 10px;
+}
+
+.map__country img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.9);
 }
 
 .map__list {

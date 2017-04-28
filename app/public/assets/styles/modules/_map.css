@@ -10,16 +10,15 @@
 			border-radius: 50%;
 			transform: scale(0.92);
 		}
+	}
 
-		&--row {
-
-		}
-
+	&__image-of-sa {
+		margin-left: 50px;
 	}
 
 	&__header {
 		text-align: center;
-		margin: 0 0 5px 0;
+		margin: 40px 0;
 	}
 
 	&__descriptions--row {
@@ -29,7 +28,12 @@
 
 	&__country {
 		flex: 1 0 45%;
-		padding: 10px;
+		padding: 10px;		
+
+		& img:hover {
+			transform: scale(1.05);
+			box-shadow: 0 0 20px rgba(0,0,0,0.9);
+		}
 
 	}	
 
