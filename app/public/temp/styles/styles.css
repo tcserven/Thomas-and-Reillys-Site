@@ -666,7 +666,6 @@ body {
   background-color: rgba(0,0,0,0.7);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 0.3s, opacity 0.3s ease-in;
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
@@ -836,7 +835,7 @@ body {
 
 .welcome {
 
-	background-color: #DDD;
+	background-color: #EEE;
 }
 
 .welcome__heading {/*color: white;*/
@@ -852,10 +851,34 @@ body {
 
 .welcome__title {}
 
+.welcome__top-blog-header {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.welcome__top-blogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.welcome__top-blog-post {
+  margin: 20px;
+}
+
+.welcome__top-blog-post-header {
+  text-align: center;
+}
+
+.welcome__top-blog-post-description {/*color: red;*/
+}
+
 .map__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .map__descriptions {
@@ -906,4 +929,17 @@ body {
 
 .map__list h2 {
   margin: 0;
+}
+
+.travel-detail {
+	height: 100vh;
+	background: url("../../assets/images/map-background-min-scaled3-min.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.travel-detail__header {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
 }

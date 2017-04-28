@@ -1,0 +1,12 @@
+.travel-detail {
+	height: 100vh;
+	background: url("../../assets/images/map-background-min-scaled3-min.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+	&__header {
+		font-size: 2rem;
+		color: white;
+		text-align: center;
+	}
+}

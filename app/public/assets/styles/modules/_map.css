@@ -1,6 +1,7 @@
 .map {
 	&__container {
-		display: flex;	
+		display: flex;
+		margin-bottom: 50px;	
 	}
 
 	&__descriptions {

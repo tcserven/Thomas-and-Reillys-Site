@@ -1,6 +1,6 @@
 .welcome {
 
-	background-color: #DDD;
+	background-color: #EEE;
 
 	&__heading {
 		/*color: white;*/
@@ -16,5 +16,27 @@
 
 	&__title {
 		
+	}
+
+	&__top-blog-header {
+		margin: 10px 0;
+		text-align: center;
+	}
+	&__top-blogs {
+		display: flex;
+		margin-bottom: 50px;
+	}
+
+	&__top-blog-post {
+		margin: 20px;
+		
+
+		&-header {
+			text-align: center;
+		}
+
+		&-description {
+			/*color: red;*/
+		}
 	}
 }
