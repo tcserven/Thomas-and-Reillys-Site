@@ -18,18 +18,22 @@
 		
 	}
 
+	
+
 	&__top-blog-header {
 		margin: 10px 0;
 		text-align: center;
 	}
 	&__top-blogs {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		margin-bottom: 50px;
 	}
 
 	&__top-blog-post {
-		margin: 20px;
-		
+		margin: 10px;
+		width: 300px;
 
 		&-header {
 			text-align: center;

@@ -1,0 +1,31 @@
+.two-column-flex {
+	display: flex;
+	justify-content: center;
+	color: black;
+	margin-bottom: 50px;
+
+
+	&__description {
+		width: 700px;
+		/*flex: 1 1 300px;*/
+		text-align: center;
+	}
+
+	&__image {
+		/*display: flex;*/
+		/*width: 700px;*/
+		/*flex: 1 1 600px;*/
+		/*text-align: center;*/
+		border: 2px solid black;
+		margin: 0 20px;
+		align-self: center;
+
+		& img {
+			display: block;
+		}
+
+		&--600w {
+			width: 600px;
+		}
+	}
+}
