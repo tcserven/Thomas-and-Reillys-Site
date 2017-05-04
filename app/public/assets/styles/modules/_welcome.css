@@ -1,28 +1,70 @@
 .welcome {
 
-	background-color: #EEE;
+	
+	background: url("../../assets/images/homepage/welcome-background-cropped.jpeg") no-repeat;
+	background-size: cover;
+	background-position: top center;
+
+	&--topblogs {
+		background-color: #EEE;
+	}
 
 	&__heading {
-		/*color: white;*/
+		
 		text-align: center;
-		background-color: white;
-		margin: 50px auto;
-		padding: 40px;
-		width: 400px;
+		margin: 40px auto;
+		width: 500px;
 		border: 3px solid black;
 		border-radius: 25px;
 		box-shadow: 0 0 5px 5px #777;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
-	&__title {
+	&__heading img {
+		margin: 0 auto;
+		padding: 10px;
+		width: 350px;
+		border-radius: 25%;
 		
 	}
 
-	
+	&__title {
+		text-transform: uppercase;
+		color: $mainBlue;
+		font-size: 2.5rem;
+		margin: 20px 20px 0;
+		text-shadow: 2px 2px 1px black;
+	}
+
+	&__subheading {
+		/*color: $mainBlue;*/
+		letter-spacing: 1px;
+		font-size: 1rem;
+		font-weight: 400;
+		margin: 15px 40px 0;
+
+		&--margin-bottom {
+			margin: 10px;
+
+		}
+	}
+
+	/*from here and below technically belongs to the top posts*/
 
 	&__top-blog-header {
-		margin: 10px 0;
+		font-size: 1.5rem;
+		color: white;
+		margin: 50px 0 40px;
 		text-align: center;
+
+		& span {
+			border-radius: 5%;
+			padding: 10px 25px;
+			background: linear-gradient($mainGreen, #222);
+		}
 	}
 	&__top-blogs {
 		display: flex;
@@ -32,11 +74,20 @@
 	}
 
 	&__top-blog-post {
-		margin: 10px;
+		background-color: #DDD;
+		/*padding: 10px;*/
+		margin: 15px;
 		width: 300px;
 
 		&-header {
 			text-align: center;
+			font-size: 1.5rem;
+		}
+
+		& img {
+			width: 350px;
+			height: 200px;
+			border: 1px solid black;
 		}
 
 		&-description {

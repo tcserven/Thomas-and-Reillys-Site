@@ -1,4 +1,7 @@
 .map {
+
+	background-color: white;
+	
 	&__container {
 		display: flex;
 		margin-bottom: 50px;	

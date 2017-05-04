@@ -5,7 +5,8 @@
 	background-position: center center;
 
 	&--light-background {
-		background-color: #fcd8b2;
+		background: #fcd8b2;
+		background: linear-gradient(to top, #fcd8b2, #fdf1e4);
 	}
 
 	&__header {

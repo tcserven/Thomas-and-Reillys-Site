@@ -18,8 +18,8 @@
 		top: 5px;
 
 		@mixin at880 {
-			transform: translateX(-50%) scale(0.3);
-			left: 13%;
+			transform: translateX(-50%) scale(0.5);
+			/*left: 13%;*/
 		}
 	}
 
