@@ -575,7 +575,7 @@ body {
 }
 
 .wrapper--wide {
-  max-width: 1536px;
+  max-width: 1436px;
 }
 
 .site-nav {
@@ -665,7 +665,6 @@ body {
   background-color: rgba(0,0,0,0.7);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 0.3s, opacity 0.3s ease-in;
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
@@ -896,15 +895,14 @@ body {
 .welcome__top-blog-header {
   font-size: 1.5rem;
   color: white;
-  margin: 50px 0 40px;
+  margin: 50px 0 30px;
   text-align: center;
 }
 
 .welcome__top-blog-header span {
   border-radius: 5%;
   padding: 10px 25px;
-  background: -webkit-linear-gradient(rgb(0, 185, 81), #222);
-  background: linear-gradient(rgb(0, 185, 81), #222);
+  background: linear-gradient(rgba(0, 185, 81, 0.9), #333);
 }
 
 .welcome__top-blogs {
@@ -926,6 +924,7 @@ body {
 }
 
 .welcome__top-blog-post-header {
+  margin: 10px;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -936,7 +935,10 @@ body {
   border: 1px solid black;
 }
 
-.welcome__top-blog-post-description {/*color: red;*/
+.welcome__top-blog-post-description {
+  margin: 15px;
+  font-size: 1.1rem;
+  line-height: 23px;
 }
 
 .map {
@@ -1010,7 +1012,6 @@ body {
 
 .travel-detail--light-background {
   background: #fcd8b2;
-  background: -webkit-linear-gradient(bottom, #fcd8b2, #fdf1e4);
   background: linear-gradient(to top, #fcd8b2, #fdf1e4);
 }
 
@@ -1083,7 +1084,6 @@ body {
 	font-size: 1.2rem;
 	border-radius: 5px;
 	position: relative;
-	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 	cursor: pointer;
 }

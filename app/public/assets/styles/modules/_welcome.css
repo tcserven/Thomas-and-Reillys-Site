@@ -57,13 +57,13 @@
 	&__top-blog-header {
 		font-size: 1.5rem;
 		color: white;
-		margin: 50px 0 40px;
+		margin: 50px 0 30px;
 		text-align: center;
 
 		& span {
 			border-radius: 5%;
 			padding: 10px 25px;
-			background: linear-gradient($mainGreen, #222);
+			background: linear-gradient(rgba(0, 185, 81, 0.9), #333);
 		}
 	}
 	&__top-blogs {
@@ -80,6 +80,7 @@
 		width: 300px;
 
 		&-header {
+			margin: 10px;
 			text-align: center;
 			font-size: 1.5rem;
 		}
@@ -91,7 +92,9 @@
 		}
 
 		&-description {
-			/*color: red;*/
+			margin: 15px;
+			font-size: 1.1rem;
+			line-height: 23px;
 		}
 	}
 }
