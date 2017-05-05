@@ -665,7 +665,6 @@ body {
   background-color: rgba(0,0,0,0.7);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 0.3s, opacity 0.3s ease-in;
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
@@ -903,7 +902,6 @@ body {
 .welcome__top-blog-header span {
   border-radius: 5%;
   padding: 10px 25px;
-  background: -webkit-linear-gradient(rgba(0, 185, 81, 0.9), #333);
   background: linear-gradient(rgba(0, 185, 81, 0.9), #333);
 }
 
@@ -1049,8 +1047,23 @@ body {
 
 /*this line is if we keep the travel example thingy*/
 
-.travel-detail__heading, .travel-detail__subheading, .travel-detail__intro {
-  text-shadow: 10px 10px 5px black;
+.travel-detail__heading, .travel-detail__intro {
+  text-shadow: 9px 9px 5px black;
+}
+
+.travel-detail__subheading {
+  text-shadow: 6px 6px 5px black;
+}
+
+.travel-detail__intro a {
+  text-decoration: none;
+  color: red;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+}
+
+.travel-detail__intro a:hover {
+  color: blue;
 }
 
 .two-column-flex {
@@ -1116,7 +1129,6 @@ body {
 	font-size: 1.2rem;
 	border-radius: 5px;
 	position: relative;
-	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 	cursor: pointer;
 }
