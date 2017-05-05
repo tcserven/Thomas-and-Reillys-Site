@@ -4,14 +4,20 @@
 	background-size: cover;
 	background-position: center center;
 
-	&--light-background {
+	/*this line is if we keep the travel example thingy*/
+	/*&--light-background {
 		background: #fcd8b2;
 		background: linear-gradient(to top, #fcd8b2, #fdf1e4);
-	}
+	}*/
 
 	&__header {
 		font-size: 2rem;
 		color: white;
 		text-align: center;
+		
+	}
+
+	&__heading, &__subheading, &__intro {
+		text-shadow: 10px 10px 5px black;
 	}
 }

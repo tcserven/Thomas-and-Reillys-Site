@@ -22,7 +22,28 @@
 
 	&__header {
 		text-align: center;
-		margin: 40px 0;
+		margin: 40px 0 20px;
+		font-size: 2.5rem;
+		color: $mainBlue;
+		font-weight: 400;
+
+		& a {
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $mainOrange;
+			text-decoration: none;
+		}
+	}
+
+	&__subheader {
+		text-align: center;
+		font-weight: 400;
+		margin-bottom: 10px;
+
+		&--margin-bottom {
+			margin-bottom: 20px;
+		}
+		
 	}
 
 	&__descriptions--row {
@@ -32,7 +53,12 @@
 
 	&__country {
 		flex: 1 0 45%;
-		padding: 10px;		
+		padding: 10px;
+
+		& img {
+			box-shadow: 0 0 20px rgba(0,0,0,0.9);
+		}
+
 
 		& img:hover {
 			transform: scale(1.05);
