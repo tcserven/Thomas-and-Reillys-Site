@@ -54,6 +54,14 @@
 
 	/*from here and below technically belongs to the top posts*/
 
+	&__top-blog-intro {
+		text-align: center;
+		margin: 40px 0 20px;
+		font-size: 2.5rem;
+		color: $mainBlue;
+		text-shadow: 2px 2px 1px black;
+	}
+
 	&__top-blog-header {
 		font-size: 1.5rem;
 		color: white;
@@ -66,6 +74,7 @@
 			background: linear-gradient(rgba(0, 185, 81, 0.9), #333);
 		}
 	}
+	
 	&__top-blogs {
 		display: flex;
 		flex-wrap: wrap;
