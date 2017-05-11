@@ -44,6 +44,12 @@
 		flex: 0 1 11%;
 		display: flex;
 		justify-content: center;
+		/*background-color: black;*/
+		transition: background-color 0.3s ease-out;
+
+		&:hover {
+			background-color: $mainBlue;
+		}
 	}
 
 	&__menu--container-ul li a {
@@ -57,7 +63,7 @@
 		padding: 0;
 		display: block;
 		position: absolute;
-		margin: 70px 0 0 55px;
+		margin: 70px 0 0 50px;
 		background-color: rgba(0,0,0,0.7);
 
 		visibility: hidden;
@@ -93,18 +99,21 @@
 
 		@mixin atBiggest {
 			font-size: 1.2rem;
+			padding: 20px 15px;
 		}
 
 	}
 
 	&__menu--container-ul ul li a {
-		/*color: green;*/
 		font-size: 0.9rem;
+		padding: 10px 10px;
+
+		&:hover {
+			color: $mainBlue;
+		}
+
 	}
 
-	a:hover {
-		color: red;
-	}
 
 
 

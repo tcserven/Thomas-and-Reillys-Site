@@ -22,6 +22,12 @@
 
 	}
 
+	&__main-logo {
+		text-decoration: none;
+	}
+
+
+
 	&__title {
 		color: $mainGreen;
 		font-weight: 100;
