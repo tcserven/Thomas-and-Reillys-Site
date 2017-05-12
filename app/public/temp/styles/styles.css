@@ -481,7 +481,7 @@ body {
 .large-background__title {
   color: rgb(0, 185, 81);
   font-weight: 100;
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 20px 0 10px;
   font-family: 'Henny Penny', cursive;
   text-shadow: 1.5px 1.5px 0 black;
@@ -490,7 +490,7 @@ body {
 @media(min-width: 530px) {
 
   .large-background__title {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -502,7 +502,7 @@ body {
   }
 }
 
-@media (min-width: 1400px) {
+@media(min-width: 1200px) {
 
   .large-background__title {
     font-size: 5.5rem;
@@ -512,7 +512,7 @@ body {
 .large-background__subtitle {
   color: rgb(0, 185, 81);
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0 0 10px;
   text-shadow: 1.5px 1.5px 0 black;
 }
@@ -520,7 +520,7 @@ body {
 @media(min-width: 530px) {
 
   .large-background__subtitle {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     text-shadow: 2.5px 2.5px 0 black;
   }
 }
@@ -528,11 +528,11 @@ body {
 @media(min-width: 800px) {
 
   .large-background__subtitle {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 }
 
-@media (min-width: 1400px) {
+@media(min-width: 1200px) {
 
   .large-background__subtitle {
     font-size: 2.5rem;
@@ -543,14 +543,14 @@ body {
   color: white;
   font-weight: 400;
   margin: 10px 0;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-shadow: 2px 2px 0 black;
 }
 
 @media(min-width: 530px) {
 
   .large-background__description {
-    font-size: 1.4rem;
+    font-size: 1.9rem;
     text-shadow: 2.5px 2.5px 0 black;
   }
 }
@@ -562,7 +562,7 @@ body {
   }
 }
 
-@media (min-width: 1400px) {
+@media(min-width: 1200px) {
 
   .large-background__description {
     font-size: 2.2rem;
@@ -583,6 +583,10 @@ body {
   max-width: 1436px;
 }
 
+.wrapper--smaller {
+  max-width: 1036px;
+}
+
 .site-nav {
 	position: absolute;
 	background-color: rgba(0, 185, 81, 0.55);
@@ -601,18 +605,37 @@ body {
 .site-nav__logo {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%) scale(0.2);
-          transform: translateX(-50%) scale(0.2);
+  -webkit-transform: translateX(-50%) scale(0.3);
+          transform: translateX(-50%) scale(0.3);
   -webkit-transform-origin: 50% 0;
           transform-origin: 50% 0;
-  top: 5px;
+  top: -20px;
 }
 
-@media(min-width: 880px) {
+@media(min-width: 530px) {
+
+  .site-nav__logo {
+    -webkit-transform: translateX(-50%) scale(0.31);
+            transform: translateX(-50%) scale(0.31);
+    top: 32px;
+  }
+}
+
+@media(min-width: 800px) {
+
+  .site-nav__logo {
+    -webkit-transform: translateX(-50%) scale(0.4);
+            transform: translateX(-50%) scale(0.4);
+    top: 15px;
+  }
+}
+
+@media(min-width: 1200px) {
 
   .site-nav__logo {
     -webkit-transform: translateX(-50%) scale(0.5);
-            transform: translateX(-50%) scale(0.5);/*left: 13%;*/
+            transform: translateX(-50%) scale(0.5);
+    top: 5px;
   }
 }
 
@@ -650,7 +673,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;/*background-color: black;*/
-  -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 }
 
@@ -676,7 +698,6 @@ body {
   background-color: rgba(0,0,0,0.7);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 0.3s, opacity 0.3s ease-in;
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
@@ -751,15 +772,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;/*flex-wrap: wrap;*/
   margin-top: 5px;/*padding-top: 10px;*/
 }
 
 .site-footer__nav-title {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 auto;
-          flex: 1 auto;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 auto;
+          flex: 5 1 auto;
   padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -779,10 +800,15 @@ body {
   padding: 0;
 }
 
-.site-footer__nav .heading {
-  margin: 0 0 5px;
-  border-bottom: 2px dashed white;
-  font-weight: 300;
+.site-footer__nav-title ul li a:hover {
+  color: rgb(8, 114, 165);
+}
+
+.site-footer__nav-title--heading {
+  margin: 0 0 5px;/*border-bottom: 2px dashed white;*/
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -800,10 +826,14 @@ body {
 .site-footer__nav-contact-us--column-header {
   margin: 0;
   text-align: center;
-  font-size: 1.6rem;
 }
 
-.site-footer__nav-contact-us--column-header:hover {
+.site-footer__nav-contact-us--column-header span {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.site-footer__nav-contact-us--column-header span:hover {
   color: rgb(255, 53, 0);
 }
 
@@ -828,7 +858,7 @@ body {
 }
 
 .site-footer__nav-contact-us--name a {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .site-footer__nav-contact-us p {
@@ -883,7 +913,7 @@ body {
 .welcome__heading {
   text-align: center;
   margin: 40px auto;
-  width: 500px;
+  width: 85%;
   border: 3px solid black;
   border-radius: 25px;
   box-shadow: 0 0 5px 5px #777;
@@ -898,6 +928,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media(min-width: 800px) {
+
+  .welcome__heading {
+    width: 500px;
+  }
 }
 
 .welcome__heading img {
@@ -1000,7 +1037,6 @@ body {
 hr {
 	border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -1169,7 +1205,6 @@ hr {
   text-decoration: none;
   color: red;/*background-color: rgba(255,255,255,0.5);*/
   border-radius: 25px;
-  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -1240,7 +1275,6 @@ hr {
 	font-size: 1.2rem;
 	border-radius: 5px;
 	position: relative;
-	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	cursor: pointer;
 }
@@ -1270,7 +1304,6 @@ hr {
   height: 0px;
   background: rgba(255,255,255,0.3);
   border-radius: 5px;
-  -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
 

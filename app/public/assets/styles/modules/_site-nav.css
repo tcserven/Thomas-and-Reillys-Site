@@ -13,13 +13,24 @@
 	&__logo {
 		position: absolute;
 		left: 50%;
-		transform: translateX(-50%) scale(0.2);
+		transform: translateX(-50%) scale(0.3);
 		transform-origin: 50% 0;
-		top: 5px;
+		top: -20px;
+		
 
-		@mixin at880 {
+		@mixin atSmall {
+			transform: translateX(-50%) scale(0.31);
+			top: 32px;
+		}
+
+		@mixin atMedium {
+			transform: translateX(-50%) scale(0.4);
+			top: 15px;
+		}
+
+		@mixin atBiggest {
 			transform: translateX(-50%) scale(0.5);
-			/*left: 13%;*/
+			top: 5px;
 		}
 	}
 

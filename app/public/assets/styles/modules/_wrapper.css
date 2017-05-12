@@ -10,4 +10,8 @@
 	&--wide {
 		max-width: 1436px;
 	}
+
+	&--smaller {
+		max-width: 1036px;
+	}
 }

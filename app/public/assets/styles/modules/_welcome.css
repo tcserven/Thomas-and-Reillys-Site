@@ -13,7 +13,7 @@
 		
 		text-align: center;
 		margin: 40px auto;
-		width: 500px;
+		width: 85%;
 		border: 3px solid black;
 		border-radius: 25px;
 		box-shadow: 0 0 5px 5px #777;
@@ -21,6 +21,10 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+		@mixin atMedium {
+			width: 500px;
+		}
 	}
 
 	&__heading img {
