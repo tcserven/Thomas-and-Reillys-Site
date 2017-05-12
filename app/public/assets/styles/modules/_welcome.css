@@ -65,7 +65,7 @@
 
 	&__top-blog-header {
 		font-size: 1.8rem;
-		margin: 50px 0 10px;
+		margin: 40px 0 10px;
 		text-align: center;
 
 
@@ -83,7 +83,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 
 	&__top-blog-post {
@@ -96,6 +96,16 @@
 			margin: 10px;
 			text-align: center;
 			font-size: 1.5rem;
+			color: black;
+
+			&:hover {
+				color: $mainBlue;
+			}
+		}
+
+		& a {
+			text-decoration: none;
+
 		}
 
 		& img {

@@ -18,6 +18,9 @@
 
 	&__image-of-sa {
 		margin-left: 50px;
+		/*max-height: 100%;*/
+		align-self: center;
+		height: 900px;
 	}
 
 	&__header {
@@ -94,13 +97,25 @@
 
 	&__highlight-intro {
 		text-align: center;
+		font-weight: 700;
+		color: $mainYellow;
+		font-size: 1.2rem;
 	}
 
 	&__quick-highlights {
 		padding-left: 25px;
-		margin: 0;
+		margin: 5px 0 0 0;
 		/*list-style: circle;*/
 		text-align: left;
+
+
+		& a {
+			color: black;
+
+			&:hover {
+				color: $mainBlue;
+			}
+		}
 	}
 
 }

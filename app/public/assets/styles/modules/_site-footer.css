@@ -34,39 +34,47 @@
 
 
 	&__nav-contact-us {
-		flex: 3 1 auto;
+		flex: 1 1 auto;
 		text-transform: uppercase;
-		display: flex;
+		/*display: flex;*/
 		flex-direction: column;
 
-		& h2 {
+		&--column-header {
+			margin: 0;
 			text-align: center;
+			font-size: 1.6rem;
+
+			&:hover {
+				color: $mainOrange;
+			}
 		}
 
-		& .contact-heading {
-			display: inline-block;
-			text-align: center;
-			margin: 0;
-			width: 49.5%;
-			
+		&--wrapper {
+			margin: 5px 20px 0;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&--name {
+			flex: 1 1 auto;
 
 			& h3 {
-				margin: 0;
-				font-weight: 400;
-				font-size: 1.1rem;
+				/*text-align: center;*/
+				margin: 0 0 5px 0;
 			}
-			
+
+			a {
+				margin-right: 10px;
+			}
 		}
 
 		& p {
+			flex: 1 1 100px;
 			text-align: center;
+			margin: 10px 0;
 		}
 	}
 
-
-	&__nav-contact-us .column-header {
-		margin: 0 0 5px;
-	} 
 
 	a {
 		text-decoration: none;
@@ -83,7 +91,7 @@
 
 	&__copyright {
 		text-align: center;
-		margin: 0 0 5px 0;
+		margin: 20px 0 10px;
 		font-size: 0.8rem;
 	}
 
