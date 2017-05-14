@@ -77,31 +77,6 @@
 
 	/*from here and below technically belongs to the top posts*/
 
-	&__top-blog-intro {
-		text-transform: uppercase;
-		text-align: center;
-		margin: 40px 0 20px;
-		font-size: 2.5rem;
-		color: $mainBlue;
-		text-shadow: 2px 2px 1px black;
-	}
-
-	&__top-blog-header {
-		font-size: 1.8rem;
-		margin: 40px 0 10px;
-		text-align: center;
-
-
-		& span {
-			border-bottom: 2px solid black;
-			text-shadow: 2px 2px 1px black;
-			color: $mainGreen;
-			/*border-radius: 5%;
-			padding: 10px 25px;
-			background: linear-gradient(rgba(0, 185, 81, 0.9), #333);*/
-		}
-	}
-	
 	&__top-blogs {
 		display: flex;
 		flex-wrap: wrap;
@@ -109,11 +84,19 @@
 		margin-bottom: 30px;
 	}
 
+	
+
 	&__top-blog-post {
-		background-color: #DDD;
-		margin: 15px;
-		width: 300px;
+		/*background-color: #DDD;*/
+		margin: 10px 0;
+		width: 100%;
 		border-radius: 15px;
+
+		@mixin atSmall {
+			margin: 15px;
+			width: 300px;
+			background-color: #DDD;
+		}
 
 		&-header {
 			margin: 10px;
@@ -128,7 +111,22 @@
 
 		& a {
 			text-decoration: none;
+		}
 
+		&--center {
+			text-align: center;
+		}
+
+		&--background {
+			border-radius: 0 0 25px 25px;
+			background-color: #DDD;
+			padding: 10px 0;
+			margin-top: -5px;
+
+			/*This media query makes no sense*/
+			@media (min-width:415px) {
+				border-radius: 25px;
+			}
 		}
 
 		& img {
@@ -136,12 +134,57 @@
 			height: 200px;
 			/*border: 1px solid black;*/
 			border-radius: 25px 25px 0 0;
+			text-align: center;
+
+			@mixin atSmall {
+				border-radius: 25px 25px 0 0;
+			}
 		}
 
 		&-description {
-			margin: 15px;
+			margin: 15px 25px;
 			font-size: 1.1rem;
 			line-height: 23px;
+			text-align: justify;
+
+			@mixin atSmall {
+				margin: 15px;
+			}
+		}
+	}
+
+	&__top-blog-intro {
+		text-transform: uppercase;
+		text-align: center;
+		margin: 25px 0 15px;
+		font-size: 2.2rem;
+		color: $mainBlue;
+		text-shadow: 2px 2px 1px black;
+
+		@mixin atMedium {
+			font-size: 2.5rem;
+			margin: 40px 0 20px;
+		}
+	}
+
+	&__top-blog-header {
+		font-size: 1.8rem;
+		margin: 25px 0 10px;
+		text-align: center;
+
+
+		@mixin atLarge {
+			margin: 40px 0 10px;
+		}
+
+
+		& span {
+			border-bottom: 2px solid black;
+			text-shadow: 2px 2px 1px black;
+			color: $mainGreen;
+			/*border-radius: 5%;
+			padding: 10px 25px;
+			background: linear-gradient(rgba(0, 185, 81, 0.9), #333);*/
 		}
 	}
 }

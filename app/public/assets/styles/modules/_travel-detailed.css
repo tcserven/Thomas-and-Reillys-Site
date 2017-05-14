@@ -11,19 +11,29 @@
 	}*/
 
 	&__header {
-		font-size: 2rem;
 		color: white;
-		text-align: center;
-		
+		text-align: center;	
 	}
 
 	&__heading, &__intro {
-		text-shadow: 9px 9px 5px black;
+		text-shadow: 6px 6px 5px black;
+		font-size: 2.5rem;
+
+		@mixin atMedium {
+			font-size: 4rem;
+			text-shadow: 9px 9px 5px black;
+		}
 	}
 
 	&__subheading {
-		text-shadow: 6px 6px 5px black;
+		text-shadow: 5px 5px 5px black;
 		margin-top: 20px;
+		font-size: 1.3rem;
+
+		@mixin atMedium {
+			font-size: 1.9rem;
+			text-shadow: 6px 6px 5px black;
+		}
 	}
 
 	&__intro {
@@ -35,7 +45,7 @@
 		color: red;
 		/*background-color: rgba(255,255,255,0.5);*/
 		border-radius: 25px;
-		transition: all 0.5s ease-out;
+		transition: color 0.5s ease-out;
 
 		&:hover {
 			color: $mainBlue;
