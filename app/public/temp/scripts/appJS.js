@@ -92,6 +92,7 @@ var MobileMenu = function () {
 		_classCallCheck(this, MobileMenu);
 
 		this.menuIcon = (0, _jquery2.default)(".site-nav__menu-button");
+		this.menuContent = (0, _jquery2.default)(".site-nav__menu--container-ul");
 		this.events();
 	}
 
@@ -100,19 +101,31 @@ var MobileMenu = function () {
 
 
 	_createClass(MobileMenu, [{
-		key: 'events',
+		key: "events",
 		value: function events() {
-			this.menuIcon.click(this.toggleTheMenu);
+			this.menuIcon.click(this.toggleTheMenu.bind(this));
+			// console.log(this);
 		}
 	}, {
-		key: 'toggleTheMenu',
+		key: "toggleTheMenu",
 		value: function toggleTheMenu() {
-			console.log('Horray');
+			console.log("");
+			this.menuContent.toggleClass("site-nav__menu--container-ul--visible");
 		}
 	}]);
 
 	return MobileMenu;
 }();
+
+// removing the class if the user has it open and then changes their viewport width
+
+
+(0, _jquery2.default)(window).resize(function () {
+	var viewportWidth = (0, _jquery2.default)(window).width();
+	if (viewportWidth > 880) {
+		(0, _jquery2.default)(".site-nav__menu--container-ul").removeClass("site-nav__menu--container-ul--visible");
+	}
+});
 
 exports.default = MobileMenu;
 

@@ -42,12 +42,21 @@
 		margin: 0;
 		padding: 0;
 		height: 70px;
-		
 		justify-content: center;
+
+		&--visible {
+			display: flex;
+			flex-direction: column;
+			height: auto;
+			background-color: red;
+			width: 100%;
+		}
 
 		@mixin at880 {
 			display: flex;
 		}
+
+
 	}
 
 

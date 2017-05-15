@@ -29,12 +29,17 @@
 
 
 	&__title {
-		color: $mainGreen;
+		
 		font-weight: 100;
 		font-size: 3rem;
 		margin: 20px 0 10px;
 		font-family: 'Henny Penny', cursive;
 		text-shadow: 1.5px 1.5px 0 black;
+
+		& a {
+			color: $mainGreen;
+			text-decoration: none;
+		}
 
 		@mixin atSmall {
 			font-size: 3.2rem;

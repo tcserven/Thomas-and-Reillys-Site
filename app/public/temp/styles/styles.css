@@ -479,12 +479,16 @@ body {
 }
 
 .large-background__title {
-  color: rgb(0, 185, 81);
   font-weight: 100;
   font-size: 3rem;
   margin: 20px 0 10px;
   font-family: 'Henny Penny', cursive;
   text-shadow: 1.5px 1.5px 0 black;
+}
+
+.large-background__title a {
+  color: rgb(0, 185, 81);
+  text-decoration: none;
 }
 
 @media(min-width: 530px) {
@@ -654,6 +658,19 @@ body {
           justify-content: center;
 }
 
+.site-nav__menu--container-ul--visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  background-color: red;
+  width: 100%;
+}
+
 @media(min-width: 880px) {
 
   .site-nav__menu--container-ul {
@@ -673,7 +690,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;/*background-color: black;*/
-  -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 }
 
@@ -699,7 +715,6 @@ body {
   background-color: rgba(0,0,0,0.7);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 0.3s, opacity 0.3s ease-in;
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
@@ -1218,7 +1233,6 @@ body {
 hr {
 	border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -1459,7 +1473,6 @@ hr {
   text-decoration: none;
   color: red;/*background-color: rgba(255,255,255,0.5);*/
   border-radius: 25px;
-  -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
 }
 
@@ -1530,7 +1543,6 @@ hr {
 	font-size: 1.2rem;
 	border-radius: 5px;
 	position: relative;
-	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	cursor: pointer;
 }
@@ -1567,7 +1579,6 @@ hr {
   height: 0px;
   background: rgba(255,255,255,0.3);
   border-radius: 5px;
-  -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
 
