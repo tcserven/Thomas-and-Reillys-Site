@@ -17,7 +17,7 @@ class MobileMenu {
 
 
 	toggleTheMenu() {
-		console.log("");
+		console.log("deratr");
 		this.menuContent.toggleClass("site-nav__menu--container-ul--visible");
 	}
 
@@ -32,4 +32,4 @@ $(window).resize(function () {
     }
 });
 
-export default MobileMenu;
+export default MobileMenu;nodemo
