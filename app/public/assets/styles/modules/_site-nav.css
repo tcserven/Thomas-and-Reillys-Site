@@ -149,22 +149,63 @@
 	&__menu-button {
 		height: 20px;
 		width: 20px;
-		/*background-color: white;*/
+		/*background-color: rgba(225,225,225,0.5);*/
 		position: absolute;
-		top: 10px;
-		right: 10px;
+		top: 15px;
+		right: 15px;
 
-		&__top {
+		&::before {
+			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: #FFF;
+			background-color: $mainYellow;
+			transform-origin: 0 0;
+			transition: transform 0.3s ease-out;
+		}
+
+		&__middle {
+			position: absolute;
+			top: 8px;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: $mainYellow;
+			transition: all 0.3s ease-out;
+			transform-origin: 0 50%;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 16px;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: $mainYellow;
+			transform-origin: 0 100%;
+			transition: transform 0.3s ease-out;
 		}
 
 		@mixin at880 {
 			display: none;
+		}
+
+		&--close-x {
+			&::before {
+				transform: rotate(45deg) scaleX(1.25);
+			}
+
+			.site-nav__menu-button__middle {
+				opacity: 0;
+				transform: scaleX(0);
+			}
+
+			&::after {
+				transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+			}
 		}
 	}
 }
