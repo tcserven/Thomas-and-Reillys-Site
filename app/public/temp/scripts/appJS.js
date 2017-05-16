@@ -63,95 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(2);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var MobileMenu = function () {
-	function MobileMenu() {
-		_classCallCheck(this, MobileMenu);
-
-		this.menuIcon = (0, _jquery2.default)(".site-nav__menu-button");
-		this.menuContent = (0, _jquery2.default)(".site-nav__menu--container-ul");
-		this.menuLiContainer = (0, _jquery2.default)(".site-nav__menu--container-li");
-		this.events();
-	}
-
-	// listening for these events. Event Handler
-	// we want the page to be listening for these events as soon as the page loads. done with this.events() in the constructor
-
-
-	_createClass(MobileMenu, [{
-		key: "events",
-		value: function events() {
-			this.menuIcon.click(this.toggleTheMenu.bind(this));
-			// console.log(this);
-		}
-	}, {
-		key: "toggleTheMenu",
-		value: function toggleTheMenu() {
-			console.log("deratr");
-			this.menuContent.toggleClass("site-nav__menu--container-ul--visible");
-			this.menuLiContainer.toggleClass("site-nav__menu--container-li--mobile");
-			this.menuIcon.toggleClass("site-nav__menu-button--close-x");
-		}
-	}]);
-
-	return MobileMenu;
-}();
-
-// removing the class if the user has it open and then changes their viewport width
-
-
-(0, _jquery2.default)(window).resize(function () {
-	var viewportWidth = (0, _jquery2.default)(window).width();
-	if (viewportWidth > 880) {
-		(0, _jquery2.default)(".site-nav__menu--container-ul").removeClass("site-nav__menu--container-ul--visible");
-		(0, _jquery2.default)(".site-nav__menu--container-li").removeClass("site-nav__menu--container-li--mobile");
-	}
-});
-
-exports.default = MobileMenu;
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _MobileMenu = __webpack_require__(0);
-
-var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// this is so we can run the constructor function as soon as the site loads
-// We create a new object that uses the MobileMenu class as a blueprint 
-var mobileMenu = new _MobileMenu2.default(); // import $ from 'jquery';
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10409,6 +10325,138 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MobileMenu = function () {
+	function MobileMenu() {
+		_classCallCheck(this, MobileMenu);
+
+		this.menuIcon = (0, _jquery2.default)(".site-nav__menu-button");
+		this.menuContent = (0, _jquery2.default)(".site-nav__menu--container-ul");
+		this.menuLiContainer = (0, _jquery2.default)(".site-nav__menu--container-li");
+		this.events();
+	}
+
+	// listening for these events. Event Handler
+	// we want the page to be listening for these events as soon as the page loads. done with this.events() in the constructor
+
+
+	_createClass(MobileMenu, [{
+		key: "events",
+		value: function events() {
+			this.menuIcon.click(this.toggleTheMenu.bind(this));
+			// console.log(this);
+		}
+	}, {
+		key: "toggleTheMenu",
+		value: function toggleTheMenu() {
+			console.log("deratr");
+			this.menuContent.toggleClass("site-nav__menu--container-ul--visible");
+			this.menuLiContainer.toggleClass("site-nav__menu--container-li--mobile");
+			this.menuIcon.toggleClass("site-nav__menu-button--close-x");
+		}
+	}]);
+
+	return MobileMenu;
+}();
+
+// removing the class if the user has it open and then changes their viewport width
+
+
+(0, _jquery2.default)(window).resize(function () {
+	var viewportWidth = (0, _jquery2.default)(window).width();
+	if (viewportWidth > 880) {
+		(0, _jquery2.default)(".site-nav__menu--container-ul").removeClass("site-nav__menu--container-ul--visible");
+		(0, _jquery2.default)(".site-nav__menu--container-li").removeClass("site-nav__menu--container-li--mobile");
+	}
+});
+
+exports.default = MobileMenu;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var RevealOnScroll = function () {
+	function RevealOnScroll() {
+		_classCallCheck(this, RevealOnScroll);
+
+		this.itemsToReveal = (0, _jquery2.default)(".map__country");
+		this.hideInitially();
+	}
+
+	_createClass(RevealOnScroll, [{
+		key: "hideInitially",
+		value: function hideInitially() {
+			this.itemsToReveal.addClass("reveal-item");
+		}
+	}]);
+
+	return RevealOnScroll;
+}();
+
+exports.default = RevealOnScroll;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _MobileMenu = __webpack_require__(1);
+
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+var _RevealOnScroll = __webpack_require__(2);
+
+var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// this is so we can run the constructor function as soon as the site loads
+// We create a new object that uses the MobileMenu class as a blueprint, or creating a new instance of that class.
+// import $ from 'jquery';
+
+var mobileMenu = new _MobileMenu2.default();
+var revealOnScroll = new _RevealOnScroll2.default();
 
 /***/ })
 /******/ ]);
