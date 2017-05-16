@@ -5,6 +5,7 @@ class MobileMenu {
 	constructor() {
 		this.menuIcon = $(".site-nav__menu-button");
 		this.menuContent = $(".site-nav__menu--container-ul");
+		this.menuLiContainer = $(".site-nav__menu--container-li");
 		this.events();
 	}
 
@@ -19,6 +20,7 @@ class MobileMenu {
 	toggleTheMenu() {
 		console.log("deratr");
 		this.menuContent.toggleClass("site-nav__menu--container-ul--visible");
+		this.menuLiContainer.toggleClass("site-nav__menu--container-li--mobile");
 	}
 
 
@@ -26,10 +28,12 @@ class MobileMenu {
 
 // removing the class if the user has it open and then changes their viewport width
 $(window).resize(function () {
-    var viewportWidth = $(window).width();
-    if (viewportWidth > 880) {
-            $(".site-nav__menu--container-ul").removeClass("site-nav__menu--container-ul--visible");
-    }
+	var viewportWidth = $(window).width();
+	if (viewportWidth > 880) {
+		$(".site-nav__menu--container-ul").removeClass("site-nav__menu--container-ul--visible");
+		$(".site-nav__menu--container-li").removeClass("site-nav__menu--container-li--mobile");
+		
+	}
 });
 
-export default MobileMenu;nodemo
+export default MobileMenu;

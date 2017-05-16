@@ -93,6 +93,7 @@ var MobileMenu = function () {
 
 		this.menuIcon = (0, _jquery2.default)(".site-nav__menu-button");
 		this.menuContent = (0, _jquery2.default)(".site-nav__menu--container-ul");
+		this.menuLiContainer = (0, _jquery2.default)(".site-nav__menu--container-li");
 		this.events();
 	}
 
@@ -109,8 +110,9 @@ var MobileMenu = function () {
 	}, {
 		key: "toggleTheMenu",
 		value: function toggleTheMenu() {
-			console.log("");
+			console.log("deratr");
 			this.menuContent.toggleClass("site-nav__menu--container-ul--visible");
+			this.menuLiContainer.toggleClass("site-nav__menu--container-li--mobile");
 		}
 	}]);
 
@@ -124,6 +126,7 @@ var MobileMenu = function () {
 	var viewportWidth = (0, _jquery2.default)(window).width();
 	if (viewportWidth > 880) {
 		(0, _jquery2.default)(".site-nav__menu--container-ul").removeClass("site-nav__menu--container-ul--visible");
+		(0, _jquery2.default)(".site-nav__menu--container-li").removeClass("site-nav__menu--container-li--mobile");
 	}
 });
 
