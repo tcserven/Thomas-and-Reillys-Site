@@ -113,6 +113,7 @@ var MobileMenu = function () {
 			console.log("deratr");
 			this.menuContent.toggleClass("site-nav__menu--container-ul--visible");
 			this.menuLiContainer.toggleClass("site-nav__menu--container-li--mobile");
+			this.menuIcon.toggleClass("site-nav__menu-button--close-x");
 		}
 	}]);
 
