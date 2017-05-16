@@ -163,6 +163,24 @@
 			background-color: #FFF;
 		}
 
+		&__middle {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #FFF;
+		}
+
+		&__bottom {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #FFF;
+		}
+
 		@mixin at880 {
 			display: none;
 		}
