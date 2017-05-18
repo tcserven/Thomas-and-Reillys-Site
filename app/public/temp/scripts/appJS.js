@@ -11117,6 +11117,7 @@ var MobileMenu = function () {
 		this.menuIcon = (0, _jquery2.default)(".site-nav__menu-button");
 		this.menuContent = (0, _jquery2.default)(".site-nav__menu--container-ul");
 		this.menuLiContainer = (0, _jquery2.default)(".site-nav__menu--container-li");
+		this.menuLogoMobile = (0, _jquery2.default)(".site-nav__logo-mobile");
 		this.events();
 	}
 
@@ -11133,8 +11134,9 @@ var MobileMenu = function () {
 	}, {
 		key: "toggleTheMenu",
 		value: function toggleTheMenu() {
-			this.menuContent.toggleClass("site-nav__menu--container-ul--visible");
+			this.menuContent.toggleClass("site-nav__menu--container-ul--visible-dark");
 			this.menuLiContainer.toggleClass("site-nav__menu--container-li--mobile");
+			this.menuLogoMobile.toggleClass("reveal-item--no-scale--is-visible--roll-out");
 		}
 	}]);
 
@@ -11147,7 +11149,7 @@ var MobileMenu = function () {
 (0, _jquery2.default)(window).resize(function () {
 	var viewportWidth = (0, _jquery2.default)(window).width();
 	if (viewportWidth > 880) {
-		(0, _jquery2.default)(".site-nav__menu--container-ul").removeClass("site-nav__menu--container-ul--visible");
+		(0, _jquery2.default)(".site-nav__menu--container-ul").removeClass("site-nav__menu--container-ul--visible-dark");
 		(0, _jquery2.default)(".site-nav__menu--container-li").removeClass("site-nav__menu--container-li--mobile");
 	}
 });
@@ -11322,8 +11324,12 @@ var StickyHeader = function () {
 			new Waypoint({
 				// Element property. Waypoints is expecting a JS native DOM element. Currently were passing a JQ object. We can access the JS native DOM element inside a JQ object easily with [0]. Its because the first item in a JQ array like object is a pointer to the native DOM element. 
 				element: this.headerTriggerElement[0],
-				handler: function handler() {
-					that.navLogo.addClass("reveal-item--is-visible--no-scale");
+				handler: function handler(direction) {
+					if (direction === "down") {
+						that.navLogo.addClass("reveal-item--no-scale--is-visible--roll-in");
+					} else {
+						that.navLogo.removeClass("reveal-item--no-scale--is-visible--roll-in");
+					}
 				}
 			});
 		}
@@ -11349,13 +11355,13 @@ var _MobileMenu = __webpack_require__(2);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _RevealOnScroll = __webpack_require__(3);
-
-var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
-
 var _StickyHeader = __webpack_require__(4);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
+
+var _RevealOnScroll = __webpack_require__(3);
+
+var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
