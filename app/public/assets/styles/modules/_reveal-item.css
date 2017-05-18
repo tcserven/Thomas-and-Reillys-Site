@@ -8,3 +8,20 @@
 		transform: scale(1);
 	}
 }
+
+.reveal-item--no-scale {
+	opacity: 0;
+	transition: opacity 0.2s linear;
+	transition: left 1.2s ease-out;
+
+	&--is-visible--roll-in {
+		opacity: 1;
+		left: 50%;
+	}
+
+	&--is-visible--roll-out {
+		opacity: 0;
+		left: -9999px;
+	}
+}
+

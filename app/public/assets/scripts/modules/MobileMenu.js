@@ -6,6 +6,7 @@ class MobileMenu {
 		this.menuIcon = $(".site-nav__menu-button");
 		this.menuContent = $(".site-nav__menu--container-ul");
 		this.menuLiContainer = $(".site-nav__menu--container-li");
+		this.menuLogoMobile = $(".site-nav__logo-mobile");
 		this.events();
 	}
 
@@ -18,9 +19,9 @@ class MobileMenu {
 
 
 	toggleTheMenu() {
-		console.log("deratr");
-		this.menuContent.toggleClass("site-nav__menu--container-ul--visible");
+		this.menuContent.toggleClass("site-nav__menu--container-ul--visible-dark");
 		this.menuLiContainer.toggleClass("site-nav__menu--container-li--mobile");
+		this.menuLogoMobile.toggleClass("reveal-item--no-scale--is-visible--roll-out");
 	}
 
 
@@ -30,7 +31,7 @@ class MobileMenu {
 $(window).resize(function () {
 	var viewportWidth = $(window).width();
 	if (viewportWidth > 880) {
-		$(".site-nav__menu--container-ul").removeClass("site-nav__menu--container-ul--visible");
+		$(".site-nav__menu--container-ul").removeClass("site-nav__menu--container-ul--visible-dark");
 		$(".site-nav__menu--container-li").removeClass("site-nav__menu--container-li--mobile");
 		
 	}
