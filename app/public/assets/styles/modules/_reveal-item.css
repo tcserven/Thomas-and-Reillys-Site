@@ -8,3 +8,13 @@
 		transform: scale(1);
 	}
 }
+
+.reveal-item--no-scale {
+	opacity: 0;
+	transition: all 1.3s ease-out;
+
+	&--is-visible--no-scale {
+		opacity: 1;
+	}
+}
+

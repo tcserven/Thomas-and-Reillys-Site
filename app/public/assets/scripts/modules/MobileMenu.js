@@ -18,7 +18,6 @@ class MobileMenu {
 
 
 	toggleTheMenu() {
-		console.log("deratr");
 		this.menuContent.toggleClass("site-nav__menu--container-ul--visible");
 		this.menuLiContainer.toggleClass("site-nav__menu--container-li--mobile");
 	}

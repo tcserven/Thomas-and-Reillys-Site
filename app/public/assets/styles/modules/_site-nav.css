@@ -9,6 +9,23 @@
 		background-color: rgba(0, 185, 81, 0.55);
 	}
 
+	&--dark {
+		background-color: rgba(0, 185, 81, 0.9)
+	}
+
+	&__logo-mobile {
+		position: fixed;
+		left: 50%;
+		transform: translateX(-50%) scale(0.23);
+		transform-origin: 50% 0;
+		top: 2px;
+
+		@mixin at880 {
+			display: none;
+		}
+
+	}
+
 
 	&__logo {
 		position: absolute;
@@ -186,24 +203,6 @@
 			background-color: $mainYellow;
 			transform-origin: 0 100%;
 			transition: transform 0.3s ease-out;
-		}
-
-		&__middle {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 20px;
-			height: 3px;
-			background-color: #FFF;
-		}
-
-		&__bottom {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 20px;
-			height: 3px;
-			background-color: #FFF;
 		}
 
 		@mixin at880 {
