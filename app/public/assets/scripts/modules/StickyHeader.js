@@ -3,12 +3,20 @@ import waypoints from "../../../../../node_modules/waypoints/lib/noframework.way
 
 class StickyHeader {
 	constructor() {
+		this.lazyImages = $(".lazyload");
 		this.siteHeader = $(".site-nav");
 		this.headerTriggerElement = $('.large-background__title');
 		this.navLogo = $('.site-nav__logo-mobile');
 		this.createHeaderWaypoint();
 		this.hideInitially();
 		this.createHeaderWaypoint2();
+		this.refreshWaypoints();
+	}
+
+	refreshWaypoints() {
+		this.lazyImages.load(function() {
+			Waypoint.refreshAll();
+		});
 	}
 
 	createHeaderWaypoint() {

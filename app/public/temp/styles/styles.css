@@ -731,6 +731,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 }
 
@@ -780,6 +781,7 @@ body {
   background-color: rgba(0,0,0,0.8);
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: visibility 0.3s, opacity 0.3s ease-in;
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
@@ -846,6 +848,7 @@ body {
   background-color: rgb(255, 162, 0);
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -858,6 +861,7 @@ body {
   width: 20px;
   height: 3px;
   background-color: rgb(255, 162, 0);
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   -webkit-transform-origin: 0 50%;
           transform-origin: 0 50%;
@@ -873,6 +877,7 @@ body {
   background-color: rgb(255, 162, 0);
   -webkit-transform-origin: 0 100%;
           transform-origin: 0 100%;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -1355,6 +1360,7 @@ body {
 hr {
 	border: 0;
     height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -1541,24 +1547,16 @@ hr {
   color: rgb(8, 114, 165);
 }
 
-.travel-detail {
-	/*height: 100vh;*/
-	background: url("../../assets/images/map-background-min-scaled3-min.jpg") no-repeat;
-	background-size: cover;
-	background-position: center center;
+.travel-detail.lazyloaded {
+  background: url("../../assets/images/map-background-min-scaled3-min.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-
-/*&--light-background {
-		background: #fcd8b2;
-		background: linear-gradient(to top, #fcd8b2, #fdf1e4);
-	}*/
 
 .travel-detail__header {
   color: white;
   text-align: center;
 }
-
-/*this line is if we keep the travel example thingy*/
 
 .travel-detail__heading, .travel-detail__intro {
   text-shadow: 6px 6px 5px black;
@@ -1593,8 +1591,9 @@ hr {
 
 .travel-detail__intro a {
   text-decoration: none;
-  color: red;/*background-color: rgba(255,255,255,0.5);*/
+  color: red;
   border-radius: 25px;
+  -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
 }
 
@@ -1665,6 +1664,7 @@ hr {
 	font-size: 1.2rem;
 	border-radius: 5px;
 	position: relative;
+	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	cursor: pointer;
 }
@@ -1701,6 +1701,7 @@ hr {
   height: 0px;
   background: rgba(255,255,255,0.3);
   border-radius: 5px;
+  -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
 
@@ -1724,8 +1725,9 @@ hr {
 .reveal-item {
 	opacity: 0;
 	-webkit-transform: scale(1.1);
-	 transform: scale(1.1);
+	        transform: scale(1.1);
 	-webkit-transition: all 1.3s ease-out;
+	transition: all 1.3s ease-out;
 }
 
 .reveal-item--is-visible {
@@ -1736,7 +1738,9 @@ hr {
 
 .reveal-item--no-scale {
 	opacity: 0;
+	-webkit-transition: opacity 0.2s linear;
 	transition: opacity 0.2s linear;
+	-webkit-transition: left 1.2s ease-out;
 	transition: left 1.2s ease-out;
 }
 

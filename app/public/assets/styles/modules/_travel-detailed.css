@@ -1,14 +1,10 @@
 .travel-detail {
-	/*height: 100vh;*/
-	background: url("../../assets/images/map-background-min-scaled3-min.jpg") no-repeat;
-	background-size: cover;
-	background-position: center center;
-
-	/*this line is if we keep the travel example thingy*/
-	/*&--light-background {
-		background: #fcd8b2;
-		background: linear-gradient(to top, #fcd8b2, #fdf1e4);
-	}*/
+	
+	&.lazyloaded {
+		background: url("../../assets/images/map-background-min-scaled3-min.jpg") no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
 
 	&__header {
 		color: white;
@@ -43,7 +39,6 @@
 	&__intro a {
 		text-decoration: none;
 		color: red;
-		/*background-color: rgba(255,255,255,0.5);*/
 		border-radius: 25px;
 		transition: color 0.5s ease-out;
 
