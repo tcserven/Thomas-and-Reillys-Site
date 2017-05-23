@@ -10,7 +10,6 @@
 	}
 
 	&__heading {
-		
 		text-align: center;
 		margin: 40px auto;
 		width: 85%;
@@ -24,6 +23,10 @@
 
 		@mixin atMedium {
 			width: 500px;
+		}
+
+		& a {
+			text-decoration: none;
 		}
 	}
 

@@ -442,6 +442,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 1.1rem;
+	line-height: 1.3;
 	/*overflow-y: scroll;*/
 }
 
@@ -455,6 +456,10 @@ body {
   display: block;
   height: 100vh;
   width: 100%;
+}
+
+.large-background__image--smaller {
+  height: 25vh;
 }
 
 .large-background__text-wrapper {
@@ -510,6 +515,35 @@ body {
 
   .large-background__title {
     font-size: 5.5rem;
+  }
+}
+
+.large-background__title--smaller {
+  font-weight: 100;
+  font-size: 2.3rem;
+  margin: 70px 0 10px;
+  font-family: 'Henny Penny', cursive;
+  text-shadow: 1.5px 1.5px 0 black;
+}
+
+.large-background__title--smaller a {
+  color: rgb(0, 185, 81);
+  text-decoration: none;
+}
+
+@media(min-width: 530px) {
+
+  .large-background__title--smaller {
+    font-size: 3rem;
+    text-shadow: 2.5px 2.5px 0 black;
+    margin: 30px 0 10px;
+  }
+}
+
+@media(min-width: 880px) {
+
+  .large-background__title--smaller {
+    margin: 70px 0 10px;
   }
 }
 
@@ -661,6 +695,34 @@ body {
     -webkit-transform: translateX(-50%) scale(0.5);
             transform: translateX(-50%) scale(0.5);
     top: 5px;
+  }
+}
+
+.site-nav__logo--smaller {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(0.25);
+          transform: translateX(-50%) scale(0.25);
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  top: 35px;
+}
+
+@media(min-width: 530px) {
+
+  .site-nav__logo--smaller {
+    -webkit-transform: translateX(-50%) scale(0.3);
+            transform: translateX(-50%) scale(0.3);
+    top: 45px;
+  }
+}
+
+@media(min-width: 880px) {
+
+  .site-nav__logo--smaller {
+    -webkit-transform: translateX(-50%) scale(0.3);
+            transform: translateX(-50%) scale(0.3);
+    top: 85px;
   }
 }
 
@@ -1167,6 +1229,10 @@ body {
   .welcome__heading {
     width: 500px;
   }
+}
+
+.welcome__heading a {
+  text-decoration: none;
 }
 
 .welcome__heading img {
@@ -1752,4 +1818,18 @@ hr {
 .reveal-item--no-scale--is-visible--roll-out {
   opacity: 0;
   left: -9999px;
+}
+
+.about-us {
+
+	background-color: #EEE;
+}
+
+.about-us__header {
+  text-align: center;
+}
+
+.about-us img {
+  display: block;
+  margin: 0 auto;
 }

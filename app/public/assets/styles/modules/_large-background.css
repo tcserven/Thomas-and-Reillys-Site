@@ -6,6 +6,10 @@
 		display: block;
 		height: 100vh;
 		width: 100%;
+
+		&--smaller {
+			height: 25vh;
+		}
 	}
 
 	&__text-wrapper {
@@ -53,6 +57,29 @@
 
 		@mixin atBiggest {
 			font-size: 5.5rem;
+		}
+
+		&--smaller {
+			font-weight: 100;
+			font-size: 2.3rem;
+			margin: 70px 0 10px;
+			font-family: 'Henny Penny', cursive;
+			text-shadow: 1.5px 1.5px 0 black;
+
+			& a {
+				color: $mainGreen;
+				text-decoration: none;
+			}
+
+			@mixin atSmall {
+				font-size: 3rem;
+				text-shadow: 2.5px 2.5px 0 black;
+				margin: 30px 0 10px;		
+			}
+
+			@mixin at880 {
+				margin: 70px 0 10px;
+			}
 		}
 	}
 

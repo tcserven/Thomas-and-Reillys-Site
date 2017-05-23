@@ -20,6 +20,11 @@ app.get("/", function(req, res) {
     res.render('index');    
 });
 
+app.get("/about-us", function(req, res) {    
+    res.render('about-us');    
+});
+
+
 
 
 app.listen(port, function() {

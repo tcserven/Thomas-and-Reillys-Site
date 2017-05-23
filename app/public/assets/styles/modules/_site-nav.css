@@ -49,6 +49,24 @@
 			transform: translateX(-50%) scale(0.5);
 			top: 5px;
 		}
+
+		&--smaller {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%) scale(0.25);
+			transform-origin: 50% 0;
+			top: 35px;	
+
+			@mixin atSmall {
+				transform: translateX(-50%) scale(0.3);
+				top: 45px;
+			}
+
+			@mixin at880 {
+				transform: translateX(-50%) scale(0.3);
+				top: 85px;
+			}
+		}
 	}
 
 
