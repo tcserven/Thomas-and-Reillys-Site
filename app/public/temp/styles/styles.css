@@ -441,7 +441,7 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	line-height: 1.3;
 	/*overflow-y: scroll;*/
 }
@@ -1679,11 +1679,11 @@ hr {
 }
 
 .two-column-flex__description {
-  width: 700px;/*flex: 1 1 300px;*/
+  width: 700px;
   text-align: center;
 }
 
-.two-column-flex__image {/*display: flex;*//*width: 700px;*//*flex: 1 1 600px;*//*text-align: center;*/
+.two-column-flex__image {
   border: 2px solid black;
   margin: 0 20px;
   -ms-flex-item-align: center;
