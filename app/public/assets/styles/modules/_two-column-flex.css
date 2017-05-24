@@ -1,19 +1,39 @@
 .two-column-flex {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
 	color: black;
 	margin-bottom: 50px;
 
+	@mixin atLarge {
+		flex-direction: row;
+	}
+
 
 	&__description {
-		width: 700px;
+		max-width: 700px;
 		text-align: center;
+
+		@mixin atLarge {
+			align-self: flex-start;
+		}
+	
+
+		& p {
+			margin: 10px;
+		}
 	}
 
 	&__image {
 		border: 2px solid black;
-		margin: 0 20px;
-		align-self: center;
+		margin: 0 auto;
+		align-self: flex-start;
+
+		@mixin atLarge {
+			margin: 20px 0 0;
+		}
 
 		& img {
 			display: block;

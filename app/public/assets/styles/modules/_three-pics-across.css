@@ -1,11 +1,22 @@
 .three-pics-across {
+	background-color: #EEE;
+}
+
+
+.three-pics-across__images {
+	/*background-color: #EEE;*/
 	display: flex;
 	/*border: 2px solid black;*/
 	justify-content: center;
-	margin-bottom: 50px;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
+	/*width: 300px;*/
 
 	& img {
-		margin: 0 20px;
+		margin: 5px;
 		border: 2px solid black;
-	} 
+		flex: 0 1 auto;
+		width: 390px;
+	}
+
 }
