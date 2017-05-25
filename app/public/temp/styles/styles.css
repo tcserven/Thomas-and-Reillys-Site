@@ -793,6 +793,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 }
 
@@ -842,6 +843,7 @@ body {
   background-color: rgba(0,0,0,0.8);
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: visibility 0.3s, opacity 0.3s ease-in;
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
@@ -908,6 +910,7 @@ body {
   background-color: rgb(255, 162, 0);
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -920,6 +923,7 @@ body {
   width: 20px;
   height: 3px;
   background-color: rgb(255, 162, 0);
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   -webkit-transform-origin: 0 50%;
           transform-origin: 0 50%;
@@ -935,6 +939,7 @@ body {
   background-color: rgb(255, 162, 0);
   -webkit-transform-origin: 0 100%;
           transform-origin: 0 100%;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -1419,6 +1424,7 @@ body {
 hr {
 	border: 0;
     height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -1426,10 +1432,6 @@ hr {
 
 	background-color: white;
 
-}
-
-.map__link {
-  text-align: center;
 }
 
 .map__container {
@@ -1655,6 +1657,7 @@ hr {
   text-decoration: none;
   color: red;
   border-radius: 25px;
+  -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
 }
 
@@ -1692,8 +1695,7 @@ hr {
 }
 
 .two-column-flex__description {
-  max-width: 700px;
-  text-align: center;
+  text-align: left;
 }
 
 @media(min-width: 980px) {
@@ -1701,11 +1703,15 @@ hr {
   .two-column-flex__description {
     -ms-flex-item-align: start;
         align-self: flex-start;
+    max-width: 700px;
   }
 }
 
-.two-column-flex__description p {
-  margin: 10px;
+@media(min-width: 980px) {
+
+  .two-column-flex__description p {
+    margin: 10px;
+  }
 }
 
 .two-column-flex__image {
@@ -1718,7 +1724,7 @@ hr {
 @media(min-width: 980px) {
 
   .two-column-flex__image {
-    margin: 20px 0 0;
+    margin: 20px 10px 0;
   }
 }
 
@@ -1769,6 +1775,7 @@ hr {
 	font-size: 1.2rem;
 	border-radius: 5px;
 	position: relative;
+	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	cursor: pointer;
 }
@@ -1782,6 +1789,14 @@ hr {
   .button--larger {
     font-size: 1.8rem;
   }
+}
+
+.button--margin-bottom {
+  margin-bottom: 20px;
+}
+
+.button__link {
+  text-align: center;
 }
 
 .button__ghost {/*& a:active {
@@ -1819,6 +1834,7 @@ hr {
   height: 0px;
   background: rgba(255,255,255,0.3);
   border-radius: 5px;
+  -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
 
@@ -1843,6 +1859,7 @@ hr {
 	opacity: 0;
 	-webkit-transform: scale(1.1);
 	        transform: scale(1.1);
+	-webkit-transition: all 1.3s ease-out;
 	transition: all 1.3s ease-out;
 }
 
@@ -1854,7 +1871,9 @@ hr {
 
 .reveal-item--no-scale {
 	opacity: 0;
+	-webkit-transition: opacity 0.2s linear;
 	transition: opacity 0.2s linear;
+	-webkit-transition: left 1.2s ease-out;
 	transition: left 1.2s ease-out;
 }
 
@@ -1880,4 +1899,8 @@ hr {
 .about-us img {
   display: block;
   margin: 0 auto;
+}
+
+.about-us__continue__header {
+  text-align: center;
 }

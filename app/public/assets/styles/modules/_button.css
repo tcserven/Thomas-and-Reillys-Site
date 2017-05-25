@@ -19,6 +19,14 @@
 		}
 	}
 
+	&--margin-bottom {
+		margin-bottom: 20px;
+	}
+
+	&__link {
+		text-align: center;
+	}
+
 	&__ghost {
 		&:hover {
 			background: rgba(0,0,0,0);

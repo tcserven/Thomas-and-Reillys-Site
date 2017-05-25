@@ -10,4 +10,8 @@
 		display: block;
 		margin: 0 auto;	
 	}
+
+	&__continue__header {
+		text-align: center;
+	}
 }

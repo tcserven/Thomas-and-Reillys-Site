@@ -1,10 +1,6 @@
 .map {
 
 	background-color: white;
-
-	&__link {
-		text-align: center;
-	}
 	
 	&__container {
 		display: flex;

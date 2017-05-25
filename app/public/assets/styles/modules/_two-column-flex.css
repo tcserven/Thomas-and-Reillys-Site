@@ -13,16 +13,20 @@
 
 
 	&__description {
-		max-width: 700px;
-		text-align: center;
+		
+		text-align: left;
 
 		@mixin atLarge {
 			align-self: flex-start;
+			max-width: 700px;
 		}
 	
 
 		& p {
-			margin: 10px;
+			@mixin atLarge {
+				margin: 10px;
+			}
+			
 		}
 	}
 
@@ -32,7 +36,7 @@
 		align-self: flex-start;
 
 		@mixin atLarge {
-			margin: 20px 0 0;
+			margin: 20px 10px 0;
 		}
 
 		& img {
