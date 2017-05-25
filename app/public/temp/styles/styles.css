@@ -778,8 +778,7 @@ body {
 
 @media(min-width: 1200px) {
 
-  .site-nav__menu--container-ul {
-    margin-top: -24px;
+  .site-nav__menu--container-ul {/*margin-top: -24px;*/
   }
 }
 
@@ -865,7 +864,7 @@ body {
   opacity: 1;
 }
 
-.site-nav a {
+.site-nav__menu--container-a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 700;
@@ -875,9 +874,9 @@ body {
 
 @media(min-width: 1200px) {
 
-  .site-nav a {
+  .site-nav__menu--container-a {
     font-size: 1.2rem;
-    padding: 20px 10px;
+    padding: 20px 30px;
   }
 }
 
@@ -1899,4 +1898,21 @@ hr {
 
 .our-journey {
 	
+}
+
+.section-headers__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 25px 0;
+  font-size: 2.2rem;
+  color: rgb(8, 114, 165);
+  text-shadow: 2px 2px 1px black;
+}
+
+@media(min-width: 800px) {
+
+  .section-headers__title {
+    font-size: 2.5rem;
+    margin: 40px 0x;
+  }
 }
