@@ -25,7 +25,7 @@ app.get("/about-us", function(req, res) {
 });
 
 app.get("/overview", function(req, res) {    
-    res.render('overview');    
+    res.render('our-journey');    
 });
 
 
