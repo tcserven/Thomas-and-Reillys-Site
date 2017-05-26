@@ -10,7 +10,7 @@ class StickyHeader {
 		this.createHeaderWaypoint();
 		this.hideInitially();
 		this.createHeaderWaypoint2();
-		this.refreshWaypoints();
+		// this.refreshWaypoints();
 	}
 
 	refreshWaypoints() {

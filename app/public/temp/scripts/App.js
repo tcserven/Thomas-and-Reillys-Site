@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11286,15 +11286,24 @@ var StickyHeader = function () {
 	function StickyHeader() {
 		_classCallCheck(this, StickyHeader);
 
+		this.lazyImages = (0, _jquery2.default)(".lazyload");
 		this.siteHeader = (0, _jquery2.default)(".site-nav");
 		this.headerTriggerElement = (0, _jquery2.default)('.large-background__title');
 		this.navLogo = (0, _jquery2.default)('.site-nav__logo-mobile');
 		this.createHeaderWaypoint();
 		this.hideInitially();
 		this.createHeaderWaypoint2();
+		// this.refreshWaypoints();
 	}
 
 	_createClass(StickyHeader, [{
+		key: "refreshWaypoints",
+		value: function refreshWaypoints() {
+			this.lazyImages.load(function () {
+				Waypoint.refreshAll();
+			});
+		}
+	}, {
 		key: "createHeaderWaypoint",
 		value: function createHeaderWaypoint() {
 			// here, this is pointing towards our main class of StickyHeader
@@ -11342,8 +11351,7 @@ exports.default = StickyHeader;
 
 /***/ }),
 /* 5 */,
-/* 6 */,
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

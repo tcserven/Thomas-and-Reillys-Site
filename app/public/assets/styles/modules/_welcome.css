@@ -92,6 +92,11 @@
 		margin: 10px 0;
 		width: 100%;
 		border-radius: 15px;
+		transition: transform 0.3s ease-out;
+
+		&:hover {
+			transform: scale(1.05);
+		}
 
 		@mixin atSmall {
 			margin: 15px;
