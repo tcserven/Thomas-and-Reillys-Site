@@ -444,6 +444,7 @@ body {
 	font-size: 1.2rem;
 	line-height: 1.3;
 	/*overflow-y: scroll;*/
+	scroll-behavior: smooth; 
 }
 
 .large-background {
@@ -1740,6 +1741,26 @@ hr {
   border: none;
 }
 
+.two-column-flex__center-list {
+  text-align: center;
+}
+
+.two-column-flex__center-list--margin {
+  margin: 0 0 30px;
+}
+
+.two-column-flex__center-list > a {
+  display: none;
+}
+
+@media(min-width: 530px) {
+
+  .two-column-flex__center-list > a {
+    display: inline-block;
+    margin: 5px;
+  }
+}
+
 .three-pics-across {
 	background-color: #EEE;
 }
@@ -1819,6 +1840,7 @@ hr {
 	position: relative;
 	transition: all 0.3s ease;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .button--larger {
@@ -1959,6 +1981,27 @@ hr {
 
   .section-headers__title {
     font-size: 2.5rem;
-    margin: 40px 0x;
+    margin: 40px 0;
+  }
+}
+
+.section-headers__title--less-bottom-margin {
+  margin-bottom: 15px;
+}
+
+.section-headers__subheading {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 25px 0;
+  font-size: 2rem;
+  color: rgb(0, 185, 81);
+  text-shadow: 2px 2px 1px black;
+}
+
+@media(min-width: 800px) {
+
+  .section-headers__subheading {
+    font-size: 2.2rem;
+    margin: 30px 0;
   }
 }

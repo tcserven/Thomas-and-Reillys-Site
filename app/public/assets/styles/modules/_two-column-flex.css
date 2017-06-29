@@ -51,4 +51,21 @@
 			border: none;
 		}
 	}
+
+	&__center-list {
+		text-align: center;
+
+		&--margin {
+			margin: 0 0 30px;
+		}
+
+		& > a {
+			display: none;
+
+			@mixin atSmall {
+				display: inline-block;
+				margin: 5px;
+			}
+		}
+	}
 }
