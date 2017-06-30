@@ -1695,6 +1695,17 @@ hr {
   }
 }
 
+.two-column-flex__hide {
+  display: none;
+}
+
+@media(min-width: 980px) {
+
+  .two-column-flex__hide {
+    display: block;
+  }
+}
+
 .two-column-flex__description {
   text-align: left;
 }
@@ -1729,9 +1740,9 @@ hr {
   }
 }
 
-.two-column-flex__image img {
-  display: block;
-}
+/*& img {
+			display: block;
+		}*/
 
 .two-column-flex__image--600w {
   width: 600px;
