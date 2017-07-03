@@ -11379,6 +11379,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // We create a new object that uses the MobileMenu class as a blueprint, or creating a new instance of that class.
 var mobileMenu = new _MobileMenu2.default();
 var stickyHeader = new _StickyHeader2.default();
+var scrollToLink = new ScrollToLink();
 
 // Making our code reusable for revealonscroll
 new _RevealOnScroll2.default((0, _jquery2.default)(".map__country"), "85%");

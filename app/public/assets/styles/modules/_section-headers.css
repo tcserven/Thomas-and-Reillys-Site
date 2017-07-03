@@ -9,7 +9,46 @@
 
 		@mixin atMedium {
 			font-size: 2.5rem;
-			margin: 40px 0x;
+			margin: 40px 0;
 		}
+
+		&--less-bottom-margin {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__subheading {
+		text-transform: uppercase;
+		text-align: center;
+		margin: 25px 0;
+		font-size: 2rem;
+		color: $mainGreen;
+		text-shadow: 2px 2px 1px black;
+
+		@mixin atMedium {
+			font-size: 2.2rem;
+			margin: 30px 0;
+		}		
+	}
+
+	&__section {
+		margin: 25px 0;
+		font-size: 2rem;
+		color: $mainGreen;
+
+		@mixin atMedium {
+			font-size: 1.5rem;
+			margin: 15px 0;
+		}
+	}
+
+	&__line-highlight {
+		color: $mainYellow;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	&--no-margin {
+		margin: 10px;
 	}
 }

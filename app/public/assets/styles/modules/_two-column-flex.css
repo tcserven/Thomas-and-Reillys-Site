@@ -3,14 +3,23 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-
-	color: black;
 	margin-bottom: 50px;
 
 	@mixin atLarge {
 		flex-direction: row;
 	}
 
+	&__less-margin-b {
+		margin-bottom: 20px;
+	}
+
+	&__hide {
+		display: none;
+
+		@mixin atLarge {
+			display: block;
+		}
+	}
 
 	&__description {
 		
@@ -39,9 +48,9 @@
 			margin: 20px 10px 0;
 		}
 
-		& img {
+		/*& img {
 			display: block;
-		}
+		}*/
 
 		&--600w {
 			width: 600px;
@@ -49,6 +58,23 @@
 
 		&--no-border {
 			border: none;
+		}
+	}
+
+	&__center-list {
+		text-align: center;
+
+		&--margin {
+			margin: 0 0 30px;
+		}
+
+		& > a {
+			display: none;
+
+			@mixin atSmall {
+				display: inline-block;
+				margin: 5px;
+			}
 		}
 	}
 }
