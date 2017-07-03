@@ -3,12 +3,14 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-
-	color: black;
 	margin-bottom: 50px;
 
 	@mixin atLarge {
 		flex-direction: row;
+	}
+
+	&__less-margin-b {
+		margin-bottom: 20px;
 	}
 
 	&__hide {
@@ -18,7 +20,6 @@
 			display: block;
 		}
 	}
-
 
 	&__description {
 		
