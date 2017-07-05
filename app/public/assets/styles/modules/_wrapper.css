@@ -14,4 +14,8 @@
 	&--smaller {
 		max-width: 1036px;
 	}
+
+	&__line-spacing {
+		line-height: 1.625;
+	}
 }

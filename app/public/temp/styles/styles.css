@@ -628,6 +628,10 @@ body {
   max-width: 1036px;
 }
 
+.wrapper__line-spacing {
+  line-height: 1.625;
+}
+
 .site-nav {
 	position: fixed;
 	z-index: 2;
@@ -1768,24 +1772,15 @@ hr {
   text-align: center;
 }
 
-.two-column-flex__center-list--margin {
-  margin: 0 0 30px;
-}
+/*margin: 20px auto;*/
 
 .two-column-flex__center-list > a {
-  display: none;
-}
-
-@media(min-width: 530px) {
-
-  .two-column-flex__center-list > a {
-    display: inline-block;
-    margin: 5px;
-  }
+  display: inline-block;
+  margin: 5px;
 }
 
 .three-pics-across {
-	background-color: #EEE;
+	background-color: #FFF;
 }
 
 .three-pics-across__single-wrapper {
@@ -1794,9 +1789,16 @@ hr {
 
 .three-pics-across__single-wrapper:hover > .three-pics-across__image-modal {
   opacity: 1;
-  height: 97%;
+  height: 96%;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+}
+
+@media(min-width: 880px) {
+
+  .three-pics-across__single-wrapper:hover > .three-pics-across__image-modal {
+    height: 97%;
+  }
 }
 
 .three-pics-across__image-modal {
@@ -1805,17 +1807,16 @@ hr {
   position: absolute;
   top: 4px;
   left: 4px;
-  width: 100%;
+  width: 97%;
   height: 0%;
   background-color: rgba(255, 23, 25, 0.5);
   border-radius: 10px;
 }
 
-@media(min-width: 449px) {
+@media(min-width: 880px) {
 
   .three-pics-across__image-modal {
     width: 98%;
-    height: 0;
   }
 }
 
@@ -1841,8 +1842,9 @@ hr {
 	        justify-content: center;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	padding-bottom: 50px;
 }
+
+/*padding-bottom: 50px;*/
 
 .three-pics-across__images img {
   margin: 5px;
@@ -1850,7 +1852,14 @@ hr {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-  width: 390px;
+  width: 290px;
+}
+
+@media(min-width: 880px) {
+
+  .three-pics-across__images img {
+    width: 390px;
+  }
 }
 
 .button {
@@ -1975,10 +1984,6 @@ hr {
   left: -9999px;
 }
 
-.about-us {
-	line-height: 1.625;
-}
-
 .about-us img {
   display: block;
   margin: 0 auto;
@@ -1986,10 +1991,6 @@ hr {
 
 .about-us__continue__header {
   text-align: center;
-}
-
-.our-journey {
-	
 }
 
 .section-headers__title {

@@ -1,5 +1,5 @@
 .three-pics-across {
-	background-color: #EEE;
+	background-color: #FFF;
 
 	&__single-wrapper {
 		position: relative;
@@ -7,8 +7,12 @@
 
 	&__single-wrapper:hover > &__image-modal {
 		opacity: 1;
-		height: 97%;
+		height: 96%;
 		transition: all 0.5s ease-out;
+
+		@mixin at880 {
+			height: 97%;
+		}
 	}
 
 	&__image-modal {
@@ -17,14 +21,13 @@
 		position: absolute;
 		top: 4px;
 		left: 4px;
-		width: 100%;
+		width: 97%;
 		height: 0%;
 		background-color: rgba(255, 23, 25, 0.5);
 		border-radius: 10px;
 
-		@media(min-width: 449px) {
+		@mixin at880 {
 			width: 98%;
-			height: 0;
 		}
 
 		& span {
@@ -44,12 +47,16 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding-bottom: 50px;
+	/*padding-bottom: 50px;*/
 
 	& img {
 		margin: 5px;
 		border-radius: 10px;
 		flex: 0 1 auto;
-		width: 390px;
+		width: 290px;
+
+		@mixin at880 {
+			width: 390px;
+		}
 	}
 }

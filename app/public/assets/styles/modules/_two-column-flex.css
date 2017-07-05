@@ -63,18 +63,13 @@
 
 	&__center-list {
 		text-align: center;
-
-		&--margin {
-			margin: 0 0 30px;
-		}
+		/*margin: 20px auto;*/
 
 		& > a {
-			display: none;
-
-			@mixin atSmall {
-				display: inline-block;
-				margin: 5px;
-			}
+			display: inline-block;
+			margin: 5px;
 		}
+
+		
 	}
 }

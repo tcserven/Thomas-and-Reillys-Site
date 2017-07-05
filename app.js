@@ -24,11 +24,20 @@ app.get("/about-us", function(req, res) {
 
 // The four countries overview pages
 app.get("/overview", function(req, res) {    
-    res.render('our-journey');    
+    res.render('overview');    
 });
 
 app.get("/overview/bolivia", function(req, res) {    
     res.render('countries/bolivia');    
+});
+app.get("/overview/peru", function(req, res) {    
+    res.render('countries/peru');    
+});
+app.get("/overview/ecuador", function(req, res) {    
+    res.render('countries/ecuador');    
+});
+app.get("/overview/colombia", function(req, res) {    
+    res.render('countries/colombia');    
 });
 
 
