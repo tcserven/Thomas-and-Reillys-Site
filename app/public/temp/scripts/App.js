@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11274,6 +11274,54 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ScrollToLink = function () {
+	function ScrollToLink() {
+		_classCallCheck(this, ScrollToLink);
+
+		this.toplinks = (0, _jquery2.default)("#toplinks");
+		this.events();
+	}
+
+	_createClass(ScrollToLink, [{
+		key: "events",
+		value: function events() {
+			this.toplinks.on("click", "a", function (event) {
+				event.preventDefault();
+				//clever way to select the offset of the paragraph linking to the specific button  
+				var o = (0, _jquery2.default)((0, _jquery2.default)(this).attr("href")).offset();
+				console.log(o);
+				var sT = o.top - (0, _jquery2.default)("#site-nav").outerHeight(true);
+				window.scrollTo(0, sT);
+			});
+		}
+	}]);
+
+	return ScrollToLink;
+}();
+
+exports.default = ScrollToLink;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
@@ -11350,8 +11398,8 @@ var StickyHeader = function () {
 exports.default = StickyHeader;
 
 /***/ }),
-/* 5 */,
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11365,7 +11413,7 @@ var _MobileMenu = __webpack_require__(2);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _StickyHeader = __webpack_require__(4);
+var _StickyHeader = __webpack_require__(5);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
@@ -11373,13 +11421,17 @@ var _RevealOnScroll = __webpack_require__(3);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
+var _ScrollToLink = __webpack_require__(4);
+
+var _ScrollToLink2 = _interopRequireDefault(_ScrollToLink);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // this is so we can run the constructor function as soon as the site loads
 // We create a new object that uses the MobileMenu class as a blueprint, or creating a new instance of that class.
 var mobileMenu = new _MobileMenu2.default();
 var stickyHeader = new _StickyHeader2.default();
-// var scrollToLink = new ScrollToLink();
+var scrollToLink = new _ScrollToLink2.default();
 
 // Making our code reusable for revealonscroll
 new _RevealOnScroll2.default((0, _jquery2.default)(".map__country"), "85%");

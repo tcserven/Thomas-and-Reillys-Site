@@ -43,9 +43,11 @@
 		border: 2px solid black;
 		margin: 0 auto;
 		align-self: flex-start;
+		max-width: 400px;
 
 		@mixin atLarge {
 			margin: 20px 10px 0;
+			max-width: 450px;
 		}
 
 		/*& img {
@@ -58,6 +60,14 @@
 
 		&--no-border {
 			border: none;
+		}
+
+		&--margin-top {
+			margin-top: 0;
+
+			@mixin atLarge {
+				margin-top: 130px;
+			}
 		}
 	}
 
