@@ -1198,6 +1198,10 @@ body {
 	color: #0e76a8;
 }
 
+.fa-plane, .fa-map {
+	color: rgb(8, 114, 165);
+}
+
 .welcome {	
 	background: url("../../assets/images/homepage/welcome-background-cropped.jpeg") no-repeat;
 	background-size: cover;
@@ -1777,7 +1781,7 @@ hr {
 @media(min-width: 980px) {
 
   .two-column-flex__image--margin-top {
-    margin-top: 130px;
+    margin-top: 50px;
   }
 }
 
@@ -1792,6 +1796,9 @@ hr {
   margin: 5px;
 }
 
+/*This is a highly customizable class. You can have 1, 2 or 3 images. If you dont want it to have a modal, then dont put the modal div. If you do, then wrap it in an anchor tag. 
+*/
+
 .three-pics-across {
 	background-color: #FFF;
 }
@@ -1800,16 +1807,16 @@ hr {
   position: relative;
 }
 
-.three-pics-across__single-wrapper:hover > .three-pics-across__image-modal {
+.three-pics-across__single-wrapper a:hover > .three-pics-across__image-modal {
   opacity: 1;
   height: 96%;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
 }
 
 @media(min-width: 880px) {
 
-  .three-pics-across__single-wrapper:hover > .three-pics-across__image-modal {
+  .three-pics-across__single-wrapper a:hover > .three-pics-across__image-modal {
     height: 97%;
   }
 }
@@ -1821,7 +1828,7 @@ hr {
   top: 4px;
   left: 4px;
   width: 97%;
-  height: 0%;
+  height: 0;
   background-color: rgba(255, 23, 25, 0.5);
   border-radius: 10px;
 }
@@ -1829,12 +1836,13 @@ hr {
 @media(min-width: 880px) {
 
   .three-pics-across__image-modal {
+    height: 97%;
     width: 98%;
   }
 }
 
 .three-pics-across__image-modal span {
-  cursor: context-menu;
+  cursor: pointer;
   position: absolute;
   color: white;
   font-size: 4.5rem;
@@ -1844,7 +1852,7 @@ hr {
           transform: translateX(-50%) translateY(-50%);
 }
 
-/*images must be 390px wide and all must be the same height! */
+/*images must be 390px wide (3 pics) and all must be the same height! */
 
 .three-pics-across__images {
 	display: -webkit-box;
@@ -2044,20 +2052,6 @@ hr {
   }
 }
 
-.section-headers__section {
-  margin: 25px 0;
-  font-size: 2rem;
-  color: rgb(0, 185, 81);
-}
-
-@media(min-width: 800px) {
-
-  .section-headers__section {
-    font-size: 1.5rem;
-    margin: 15px 0;
-  }
-}
-
 .section-headers__line-highlight {
   color: rgb(255, 162, 0);
   text-align: center;
@@ -2066,4 +2060,25 @@ hr {
 
 .section-headers--no-margin {
   margin: 10px;
+}
+
+.section-headers__new-section span {
+  color: rgb(8, 114, 165);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/*just make sure the pano is in the wrapper*/
+
+/*The image can be 1000px max*/
+
+/*Second image is 800px
+Third image is 600px*/
+
+/*Need to be careful of the height of the image*/
+
+.pano__image {
+  width: 1000px;
+  border-radius: 10px;/*max-height: 300px;*/
 }

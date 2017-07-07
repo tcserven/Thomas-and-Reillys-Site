@@ -31,17 +31,6 @@
 		}		
 	}
 
-	&__section {
-		margin: 25px 0;
-		font-size: 2rem;
-		color: $mainGreen;
-
-		@mixin atMedium {
-			font-size: 1.5rem;
-			margin: 15px 0;
-		}
-	}
-
 	&__line-highlight {
 		color: $mainYellow;
 		text-align: center;
@@ -51,4 +40,13 @@
 	&--no-margin {
 		margin: 10px;
 	}
+
+	&__new-section span {
+		color: $mainBlue;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+
 }

@@ -166,3 +166,7 @@
 .fa-linkedin-square:hover {
 	color: #0e76a8;
 }
+
+.fa-plane, .fa-map {
+	color: $mainBlue;
+}

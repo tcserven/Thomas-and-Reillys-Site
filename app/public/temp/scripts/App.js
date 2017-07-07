@@ -11283,19 +11283,23 @@ var ScrollToLink = function () {
 		_classCallCheck(this, ScrollToLink);
 
 		this.toplinks = (0, _jquery2.default)("#toplinks");
+		this.navTop = (0, _jquery2.default)("#site-nav");
 		this.events();
 	}
 
 	_createClass(ScrollToLink, [{
 		key: "events",
 		value: function events() {
+			var that = this;
 			this.toplinks.on("click", "a", function (event) {
 				event.preventDefault();
-				//clever way to select the offset of the paragraph linking to the specific button  
-				var o = (0, _jquery2.default)((0, _jquery2.default)(this).attr("href")).offset();
-				console.log(o);
-				var sT = o.top - (0, _jquery2.default)("#site-nav").outerHeight(true);
-				window.scrollTo(0, sT);
+				//clever way to select the offset of the paragraph linking to the specific button
+
+				var offsetHeight = (0, _jquery2.default)((0, _jquery2.default)(this).attr("href")).offset();
+				// console.log(offsetHeight);
+				var scroll = offsetHeight.top - that.navTop.outerHeight(true);
+				// console.log(scrollTo);
+				window.scrollTo(0, scroll);
 			});
 		}
 	}]);

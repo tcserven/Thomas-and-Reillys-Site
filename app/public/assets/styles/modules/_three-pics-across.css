@@ -1,3 +1,5 @@
+/*This is a highly customizable class. You can have 1, 2 or 3 images. If you dont want it to have a modal, then dont put the modal div. If you do, then wrap it in an anchor tag. 
+*/
 .three-pics-across {
 	background-color: #FFF;
 
@@ -5,10 +7,10 @@
 		position: relative;
 	}
 
-	&__single-wrapper:hover > &__image-modal {
+	&__single-wrapper a:hover > &__image-modal {
 		opacity: 1;
 		height: 96%;
-		transition: all 0.5s ease-out;
+		transition: all 0.8s ease-out;
 
 		@mixin at880 {
 			height: 97%;
@@ -22,16 +24,17 @@
 		top: 4px;
 		left: 4px;
 		width: 97%;
-		height: 0%;
+		height: 0;
 		background-color: rgba(255, 23, 25, 0.5);
 		border-radius: 10px;
 
 		@mixin at880 {
+			height: 97%;
 			width: 98%;
 		}
 
 		& span {
-			cursor: context-menu;
+			cursor: pointer;
 			position: absolute;
 			color: white;
 			font-size: 4.5rem;
@@ -42,7 +45,7 @@
 	}
 }
 
-/*images must be 390px wide and all must be the same height! */
+/*images must be 390px wide (3 pics) and all must be the same height! */
 .three-pics-across__images {
 	display: flex;
 	justify-content: center;
