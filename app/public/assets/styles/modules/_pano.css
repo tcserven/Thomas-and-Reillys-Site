@@ -1,0 +1,12 @@
+/*just make sure the pano is in the wrapper*/
+/*The image can be 1000px max*/
+/*Second image is 800px
+Third image is 600px*/
+/*Need to be careful of the height of the image*/
+.pano {
+	&__image {
+		width: 1000px;
+		border-radius: 10px;
+		/*max-height: 300px;*/
+	}
+}
