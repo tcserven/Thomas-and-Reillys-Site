@@ -11284,12 +11284,14 @@ var ScrollToLink = function () {
 
 		this.toplinks = (0, _jquery2.default)("#toplinks");
 		this.navTop = (0, _jquery2.default)("#site-nav");
-		this.events();
+		this.scrollTopButton = (0, _jquery2.default)('#scrollTopButton');
+		this.eventScroll();
+		this.scrollTop();
 	}
 
 	_createClass(ScrollToLink, [{
-		key: "events",
-		value: function events() {
+		key: "eventScroll",
+		value: function eventScroll() {
 			var that = this;
 			this.toplinks.on("click", "a", function (event) {
 				event.preventDefault();
@@ -11300,6 +11302,23 @@ var ScrollToLink = function () {
 				var scroll = offsetHeight.top - that.navTop.outerHeight(true);
 				// console.log(scrollTo);
 				window.scrollTo(0, scroll);
+			});
+		}
+	}, {
+		key: "scrollTop",
+		value: function scrollTop() {
+			this.scrollTopButton.on('click', function () {
+				window.scrollTo(0, 0);
+			});
+
+			(0, _jquery2.default)(document).scroll(function () {
+				var y = (0, _jquery2.default)(this).scrollTop();
+				// console.log(y);
+				if (y >= 100) {
+					(0, _jquery2.default)(".button__fixedButton").addClass("button__fixedTopButton--visible");
+				} else {
+					(0, _jquery2.default)(".button__fixedButton").removeClass("button__fixedTopButton--visible");
+				}
 			});
 		}
 	}]);
