@@ -1186,8 +1186,19 @@ body {
 
 .site-footer__copyright {
   text-align: center;
-  margin: 20px 0 10px;
+  margin: 10px;
   font-size: 0.8rem;
+}
+
+.site-footer__bottom {
+  background-color: #CCC;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.site-footer__bottom p {
+  margin: 0;
+  padding: 10px;
 }
 
 .fa-facebook-square:hover {
@@ -1726,6 +1737,13 @@ hr {
   }
 }
 
+@media(min-width: 980px) {
+
+  .two-column-flex__facts-cities div {
+    margin-right: 50px;
+  }
+}
+
 .two-column-flex__description {
   text-align: left;
 }
@@ -1936,8 +1954,8 @@ hr {
   text-align: center;
 }
 
-.button__ghost {/*& a:active {
-			color: red;
+.button__ghost {/*&:active {
+			transform: translateY(2px);
 		}*/
 }
 
@@ -2090,6 +2108,11 @@ hr {
   font-size: 1.5rem;
 }
 
+.section-headers__line-highlight--smaller {
+  font-size: 1.4rem;
+  margin: 5px 0;
+}
+
 .section-headers--no-margin {
   margin: 10px;
 }
@@ -2101,6 +2124,10 @@ hr {
   font-weight: 700;
 }
 
+.section-headers--center {
+  text-align: center;
+}
+
 /*just make sure the pano is in the wrapper*/
 
 /*The image can be 1000px max*/
@@ -2110,12 +2137,48 @@ Third image is 600px*/
 
 /*Need to be careful of the height of the image*/
 
+.pano {
+	display: block;
+}
+
+@media(min-width: 980px) {
+
+  .pano {
+    margin: 0 10px;
+  }
+}
+
 .pano__image {
   width: 1000px;
-  border-radius: 10px;/*max-height: 300px;*/
+  border-radius: 10px;
+  min-height: 100px;/*max-height: 300px;*/
 }
 
 .page-design__quick-facts-ul {
   margin: -10px 0 0 0;
-  padding-left: 10%;
+  padding-left: 5%;
+}
+
+.page-design__quick-facts-ul li a {
+  text-decoration: none;
+  color: rgb(8, 114, 165);/*&:visited {
+				color: red;
+			}*/
+}
+
+.page-design__our-experience {
+  margin: 0;
+}
+
+.page-design__our-experience span {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.page-design__our-experience--list {
+  margin: 0;
+}
+
+.page-design__our-experience--verdict {
+  margin: 0;
 }

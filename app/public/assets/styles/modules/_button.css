@@ -68,9 +68,10 @@
 			color: #3a7999;
 		}
 
-		/*& a:active {
-			color: red;
+		/*&:active {
+			transform: translateY(2px);
 		}*/
+
 	}
 	
 

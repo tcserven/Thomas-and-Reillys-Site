@@ -4,9 +4,16 @@
 Third image is 600px*/
 /*Need to be careful of the height of the image*/
 .pano {
+	display: block;
+
+	@mixin atLarge {
+		margin: 0 10px;
+	}
+
 	&__image {
 		width: 1000px;
 		border-radius: 10px;
+		min-height: 100px;
 		/*max-height: 300px;*/
 	}
 }

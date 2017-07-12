@@ -153,11 +153,24 @@
 
 	&__copyright {
 		text-align: center;
-		margin: 20px 0 10px;
+		margin: 10px;
 		font-size: 0.8rem;
 	}
 
+	&__bottom {
+		background-color: #CCC;
+		text-align: center;
+		font-size: 0.9rem;
+
+		& p {
+			margin: 0;
+			padding: 10px;
+		}
+	}
+
 }
+
+
 
 .fa-facebook-square:hover {
 	color: #3b5998;

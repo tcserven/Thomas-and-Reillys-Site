@@ -1,7 +1,34 @@
 .page-design {
 	&__quick-facts-ul {
 		margin: -10px 0 0 0;
-		padding-left: 10%;
+		padding-left: 5%;
 
+		& li a {
+			text-decoration: none;
+			color: $mainBlue;
+
+			/*&:visited {
+				color: red;
+			}*/
+		}
 	}
+
+	&__our-experience {
+		margin: 0;
+
+		& span {
+			font-weight: 700;
+			font-size: 1.4rem;
+		}
+
+		&--list {
+			margin: 0;
+		}
+
+		&--verdict {
+			margin: 0;
+		}
+	}
+
+
 }

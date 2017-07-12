@@ -21,6 +21,16 @@
 		}
 	}
 
+	&__facts-cities {
+		& div {
+
+			@mixin atLarge {
+				margin-right: 50px;
+			}
+			
+		} 
+	}
+
 	&__description {
 		
 		text-align: left;
