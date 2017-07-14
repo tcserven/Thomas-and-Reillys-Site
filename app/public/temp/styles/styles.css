@@ -1827,7 +1827,7 @@ hr {
 
 .three-pics-across__single-wrapper a:hover > .three-pics-across__image-modal {
   opacity: 1;
-  height: 96%;
+  height: 95%;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
 }
@@ -1835,18 +1835,18 @@ hr {
 @media(min-width: 880px) {
 
   .three-pics-across__single-wrapper a:hover > .three-pics-across__image-modal {
-    height: 97%;
+    height: 95%;
   }
 }
 
 .three-pics-across__image-modal {
-  z-index: 10;
+  z-index: 1;
   opacity: 0;
   position: absolute;
   top: 4px;
   left: 4px;
   width: 97%;
-  height: 97%;
+  height: 95%;
   background-color: rgba(255, 23, 25, 0.5);
   border-radius: 10px;
 }
@@ -1854,16 +1854,17 @@ hr {
 @media(min-width: 880px) {
 
   .three-pics-across__image-modal {
-    height: 97%;
+    height: 95%;
     width: 98%;
   }
 }
 
 .three-pics-across__image-modal span {
   cursor: pointer;
+  text-align: center;
   position: absolute;
   color: white;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -1876,9 +1877,8 @@ hr {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 }
@@ -1891,13 +1891,13 @@ hr {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-  width: 290px;
 }
+
+/*width: 290px;*/
 
 @media(min-width: 880px) {
 
-  .three-pics-across__images img {
-    width: 390px;
+  .three-pics-across__images img {/*width: 100%;*/
   }
 }
 
@@ -2124,6 +2124,18 @@ hr {
   font-weight: 700;
 }
 
+.section-headers__new-section {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+@media(min-width: 980px) {
+
+  .section-headers__new-section {
+    text-align: left;
+  }
+}
+
 .section-headers--center {
   text-align: center;
 }
@@ -2159,6 +2171,13 @@ Third image is 600px*/
   padding-left: 5%;
 }
 
+@media(min-width: 980px) {
+
+  .page-design__quick-facts-ul {
+    margin: -10px 0 0 50px;
+  }
+}
+
 .page-design__quick-facts-ul li a {
   text-decoration: none;
   color: rgb(8, 114, 165);/*&:visited {
@@ -2177,8 +2196,20 @@ Third image is 600px*/
 
 .page-design__our-experience--list {
   margin: 0;
+  padding-left: 15px;
+}
+
+@media(min-width: 530px) {
+
+  .page-design__our-experience--list {
+    padding-left: 40px;
+  }
 }
 
 .page-design__our-experience--verdict {
   margin: 0;
+}
+
+.last-element {
+	margin-bottom: 50px;
 }

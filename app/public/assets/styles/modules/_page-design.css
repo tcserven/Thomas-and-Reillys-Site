@@ -3,6 +3,10 @@
 		margin: -10px 0 0 0;
 		padding-left: 5%;
 
+		@mixin atLarge {
+			margin: -10px 0 0 50px;
+		}
+
 		& li a {
 			text-decoration: none;
 			color: $mainBlue;
@@ -23,12 +27,19 @@
 
 		&--list {
 			margin: 0;
+			padding-left: 15px;
+
+			@mixin atSmall {
+				padding-left: 40px;
+			}
 		}
 
 		&--verdict {
 			margin: 0;
 		}
 	}
+}
 
-
+.last-element {
+	margin-bottom: 50px;
 }
