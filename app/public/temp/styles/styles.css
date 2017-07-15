@@ -799,7 +799,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 }
 
@@ -849,7 +848,6 @@ body {
   background-color: rgba(0,0,0,0.8);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 0.3s, opacity 0.3s ease-in;
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
@@ -916,7 +914,6 @@ body {
   background-color: rgb(255, 162, 0);
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -929,7 +926,6 @@ body {
   width: 20px;
   height: 3px;
   background-color: rgb(255, 162, 0);
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   -webkit-transform-origin: 0 50%;
           transform-origin: 0 50%;
@@ -945,7 +941,6 @@ body {
   background-color: rgb(255, 162, 0);
   -webkit-transform-origin: 0 100%;
           transform-origin: 0 100%;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -1330,7 +1325,6 @@ body {
   margin: 10px 0;
   width: 100%;
   border-radius: 15px;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -1454,7 +1448,6 @@ body {
 hr {
 	border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -1687,7 +1680,6 @@ hr {
   text-decoration: none;
   color: red;
   border-radius: 25px;
-  -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
 }
 
@@ -1828,7 +1820,6 @@ hr {
 .three-pics-across__single-wrapper a:hover > .three-pics-across__image-modal {
   opacity: 1;
   height: 95%;
-  -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
 }
 
@@ -1910,7 +1901,6 @@ hr {
 	font-size: 1.2rem;
 	border-radius: 5px;
 	position: relative;
-	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	cursor: pointer;
 	text-decoration: none;
@@ -1989,7 +1979,6 @@ hr {
   height: 0px;
   background: rgba(255,255,255,0.3);
   border-radius: 5px;
-  -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
 
@@ -2027,7 +2016,6 @@ hr {
 	opacity: 0;
 	-webkit-transform: scale(1.1);
 	        transform: scale(1.1);
-	-webkit-transition: all 1.3s ease-out;
 	transition: all 1.3s ease-out;
 }
 
@@ -2039,9 +2027,7 @@ hr {
 
 .reveal-item--no-scale {
 	opacity: 0;
-	-webkit-transition: opacity 0.2s linear;
 	transition: opacity 0.2s linear;
-	-webkit-transition: left 1.2s ease-out;
 	transition: left 1.2s ease-out;
 }
 
@@ -2212,4 +2198,55 @@ Third image is 600px*/
 
 .last-element {
 	margin-bottom: 50px;
+}
+
+.top-links {
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	
+
+
+	text-align: center;
+	
+}
+
+@media(min-width: 800px) {
+
+  .top-links {
+    display: block;
+  }
+}
+
+.top-links a {
+  text-decoration: none;
+  color: rgb(8, 114, 165);
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 0 17px;
+}
+
+@media(min-width: 980px) {
+
+  .top-links a {
+    font-size: 1.5rem;
+  }
+}
+
+.top-links a:hover span {
+  border-bottom: 3px solid rgb(255, 162, 0);
+}
+
+@media(min-width: 980px) {
+
+  .top-links a:hover span {
+    border-bottom: 4px solid rgb(255, 162, 0);
+  }
 }

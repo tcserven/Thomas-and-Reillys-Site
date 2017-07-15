@@ -1,0 +1,34 @@
+.top-links {
+
+	display: flex;
+	flex-direction: column;
+	@mixin atMedium {
+		display: block;		
+	}
+	
+
+
+	text-align: center;
+
+	& a {
+		text-decoration: none;
+		color: $mainBlue;
+		font-weight: 700;
+		font-size: 1.3rem;
+		padding: 0 17px;
+
+
+		@mixin atLarge {
+			font-size: 1.5rem;
+		}
+
+		&:hover span {
+			border-bottom: 3px solid $mainYellow;
+
+			@mixin atLarge {
+				border-bottom: 4px solid $mainYellow;				
+			}
+		}	
+	}
+	
+}
