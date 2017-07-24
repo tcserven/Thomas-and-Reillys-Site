@@ -22,6 +22,7 @@ class MobileMenu {
 		this.menuContent.toggleClass("site-nav__menu--container-ul--visible-dark");
 		this.menuLiContainer.toggleClass("site-nav__menu--container-li--mobile");
 		this.menuLogoMobile.toggleClass("reveal-item--no-scale--is-visible--roll-out");
+		this.menuIcon.toggleClass("site-nav__menu-button--close-x");
 	}
 
 

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": {   //this is a fix for some DDOS attacks for heroku
+  "engines": {
   	"node": "6.11.1"
   },
   "scripts": {
