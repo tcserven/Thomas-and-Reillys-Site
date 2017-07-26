@@ -2189,6 +2189,10 @@ Third image is 600px*/
   margin: 0;
 }
 
+.page-design__our-experience__route {
+  margin: 5px;
+}
+
 .page-design__our-experience span {
   font-weight: 700;
   font-size: 1.4rem;
