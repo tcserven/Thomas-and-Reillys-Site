@@ -1828,15 +1828,19 @@ hr {
 .three-pics-across__single-wrapper a:hover > .three-pics-across__image-modal {
   opacity: 1;
   height: 95%;
-  -webkit-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;/*@mixin at880 {
+			height: 95%;
+		}*/
 }
 
-@media(min-width: 880px) {
-
-  .three-pics-across__single-wrapper a:hover > .three-pics-across__image-modal {
-    height: 95%;
-  }
+.three-pics-across__single-wrapper--long a:hover > .three-pics-across__image-modal {
+  opacity: 1;
+  height: 97.5%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;/*@mixin at880 {
+			height: 95%;
+		}*/
 }
 
 .three-pics-across__image-modal {
@@ -1920,14 +1924,22 @@ hr {
   position: fixed;
   width: 50px;
   height: 50px;
-  right: 15px;
+  right: 10px;
   bottom: 20px;
   visibility: hidden;
 }
 
+@media(min-width: 880px) {
+
+  .button__fixedTopButton {
+    right: 20px;
+    bottom: 40px;
+  }
+}
+
 .button__fixedTopButton--visible {
   visibility: visible;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .button__fixedButton {
