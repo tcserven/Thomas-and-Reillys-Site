@@ -173,8 +173,19 @@
 		}
 	}
 
+	&__top-blog-description {
+		text-align: center;
+		font-size: 1.5rem;
+		margin: 20px 30px;
+
+		@mixin at880 {
+			margin: 20px 140px;
+			font-size: 1.8rem;
+		}
+	}
+
 	&__top-blog-header {
-		font-size: 1.8rem;
+		font-size: 2.2rem;
 		margin: 25px 0 10px;
 		text-align: center;
 
@@ -185,8 +196,8 @@
 
 
 		& span {
-			border-bottom: 2px solid black;
-			text-shadow: 2px 2px 1px black;
+			border-bottom: 2px solid #666;
+			/*text-shadow: 2px 2px 1px black;*/
 			color: $mainGreen;
 			/*border-radius: 5%;
 			padding: 10px 25px;

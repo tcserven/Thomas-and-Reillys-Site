@@ -801,6 +801,7 @@ body {
           justify-content: center;
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
+  text-align: center;
 }
 
 /*margin: 10px 0;*/
@@ -855,8 +856,8 @@ body {
 
 .site-nav__menu--subheader li {
   text-align: left;
-  padding: 10px 15px;
-  border: 2px solid black;
+  padding: 5px 10px;
+  border: 1px solid black;
   display: none;
 }
 
@@ -890,8 +891,8 @@ body {
 }
 
 .site-nav__menu--container-ul ul li a {
-  font-size: 0.9rem;
-  padding: 10px 10px;
+  font-size: 1rem;
+  padding: 5px;
 }
 
 .site-nav__menu--container-ul ul li a:hover {
@@ -1430,8 +1431,22 @@ body {
   }
 }
 
+.welcome__top-blog-description {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px 30px;
+}
+
+@media(min-width: 880px) {
+
+  .welcome__top-blog-description {
+    margin: 20px 140px;
+    font-size: 1.8rem;
+  }
+}
+
 .welcome__top-blog-header {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin: 25px 0 10px;
   text-align: center;
 }
@@ -1444,8 +1459,7 @@ body {
 }
 
 .welcome__top-blog-header span {
-  border-bottom: 2px solid black;
-  text-shadow: 2px 2px 1px black;
+  border-bottom: 2px solid #666;/*text-shadow: 2px 2px 1px black;*/
   color: rgb(0, 185, 81);/*border-radius: 5%;
 			padding: 10px 25px;
 			background: linear-gradient(rgba(0, 185, 81, 0.9), #333);*/
@@ -2115,7 +2129,7 @@ hr {
 }
 
 .section-headers__line-highlight {
-  color: rgb(255, 162, 0);
+  color: rgb(255, 53, 0);
   text-align: center;
   font-size: 1.5rem;
 }
@@ -2197,12 +2211,24 @@ Third image is 600px*/
 			}*/
 }
 
+.page-design__quick-facts-ul li a:hover {
+  border-bottom: 2px solid rgb(255, 162, 0);
+}
+
+.page-design__center {
+  text-align: center;
+}
+
 .page-design__our-experience {
   margin: 0;
 }
 
 .page-design__our-experience__route {
-  margin: 5px;
+  margin: 10px 0;
+}
+
+.page-design__our-experience__route p {
+  margin: 10px;
 }
 
 .page-design__our-experience span {
@@ -2224,6 +2250,12 @@ Third image is 600px*/
 
 .page-design__our-experience--verdict {
   margin: 0;
+}
+
+.page-design__highlight-paragraph {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 5px solid grey;
 }
 
 .last-element {

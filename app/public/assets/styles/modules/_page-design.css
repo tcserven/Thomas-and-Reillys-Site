@@ -11,17 +11,28 @@
 			text-decoration: none;
 			color: $mainBlue;
 
+			&:hover {
+			border-bottom: 2px solid $mainYellow;
+			}
 			/*&:visited {
 				color: red;
 			}*/
 		}
 	}
 
+	&__center {
+		text-align: center;
+	}
+
 	&__our-experience {
 		margin: 0;
 
 		&__route {
-			margin: 5px;
+			margin: 10px 0;
+
+			& p {
+				margin: 10px;
+			}
 		}
 
 		& span {
@@ -41,6 +52,12 @@
 		&--verdict {
 			margin: 0;
 		}
+	}
+
+	&__highlight-paragraph {
+		margin-left: 20px;
+		padding-left: 20px;
+		border-left: 5px solid grey;
 	}
 }
 

@@ -40,7 +40,10 @@ app.get("/overview/colombia", function(req, res) {
     res.render('countries/colombia');    
 });
 
-
+// Pages that arent built yet
+app.get("/construction", function(req, res) {    
+    res.render('construction');    
+});
 
 
 app.listen(port, function() {
