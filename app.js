@@ -17,9 +17,11 @@ app.use(express.static(path.join(__dirname, "/app/public/")));
 app.get("/", function(req, res) {    
     res.render('index');    
 });
-
 app.get("/about-us", function(req, res) {    
     res.render('about-us');    
+});
+app.get("/contact-us", function(req, res) {    
+    res.render('contact-us');    
 });
 
 // The four countries overview pages
@@ -39,6 +41,12 @@ app.get("/overview/ecuador", function(req, res) {
 app.get("/overview/colombia", function(req, res) {    
     res.render('countries/colombia');    
 });
+
+// city guides
+app.get("/city-guide", function(req, res) {    
+    res.render('city-guides/city-guide');    
+});
+
 
 // Pages that arent built yet
 app.get("/construction", function(req, res) {    
