@@ -61,9 +61,10 @@
 	}
 
 	&--light-blue {background-color: #e6f2ff}
-	&--light-green {background-color: #ccffdd}
 	&--light-grey {background-color: #e6e6e6}
-	&--light-red {background-color: #ffcccc}
+	&--light-blue2 {background-color: #e6ecff}
+	&--light-blue2 {background-color: #e6ecff}
+	&--light-orange {background-color: #ffeecc}
 }
 
 .last-element {

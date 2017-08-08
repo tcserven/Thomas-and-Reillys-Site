@@ -1075,7 +1075,8 @@ body {
 }
 
 .site-footer__nav-title--heading {
-  margin: 0 0 5px;/*border-bottom: 2px dashed white;*/
+  margin: 0 0 5px;
+  text-align: center;/*border-bottom: 2px dashed white;*/
   font-weight: 700;
   font-size: 1.6rem;
   letter-spacing: 1px;
@@ -2262,16 +2263,20 @@ Third image is 600px*/
   background-color: #e6f2ff
 }
 
-.page-design--light-green {
-  background-color: #ccffdd
-}
-
 .page-design--light-grey {
   background-color: #e6e6e6
 }
 
-.page-design--light-red {
-  background-color: #ffcccc
+.page-design--light-blue2 {
+  background-color: #e6ecff
+}
+
+.page-design--light-blue2 {
+  background-color: #e6ecff
+}
+
+.page-design--light-orange {
+  background-color: #ffeecc
 }
 
 .last-element {
