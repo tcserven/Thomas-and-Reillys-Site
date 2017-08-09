@@ -43,9 +43,15 @@ app.get("/overview/colombia", function(req, res) {
 });
 
 // city guides
-app.get("/city-guide", function(req, res) {    
+app.get("/city-guides", function(req, res) {    
     res.render('city-guides/city-guide');    
 });
+
+app.get("/city-guides/la-paz", function(req, res) {    
+    res.render('city-guides/bolivia/la-paz');    
+});
+
+
 
 
 // Pages that arent built yet

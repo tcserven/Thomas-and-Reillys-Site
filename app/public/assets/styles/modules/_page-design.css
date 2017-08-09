@@ -60,6 +60,25 @@
 		border-left: 5px solid grey;
 	}
 
+	&__llama--full-page {
+		text-align: center;
+		margin: 5px;
+
+		& img {
+			width: 40px;
+
+			@mixin atSmall {
+				width: 50px;
+			}			
+		}	
+	}
+
+	&__llama-score {
+		font-size: 2rem;
+		display: inline-block;
+		transform: translateY(-5px);
+	}
+
 	&--light-blue {background-color: #e6f2ff}
 	&--light-grey {background-color: #e6e6e6}
 	&--light-blue2 {background-color: #e6ecff}

@@ -2,13 +2,11 @@
 
 	display: flex;
 	flex-direction: column;
+	text-align: center;
+
 	@mixin atMedium {
 		display: block;		
 	}
-	
-
-
-	text-align: center;
 
 	& a {
 		text-decoration: none;
@@ -29,6 +27,20 @@
 				border-bottom: 4px solid $mainYellow;				
 			}
 		}	
+	}
+	
+}
+
+.top-links--full-page {
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+
+	@mixin atMedium {
+		flex-wrap: wrap;	
+		flex-direction: row;		
 	}
 	
 }

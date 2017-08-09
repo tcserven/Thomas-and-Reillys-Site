@@ -2259,6 +2259,29 @@ Third image is 600px*/
   border-left: 5px solid grey;
 }
 
+.page-design__llama--full-page {
+  text-align: center;
+  margin: 5px;
+}
+
+.page-design__llama--full-page img {
+  width: 40px;
+}
+
+@media(min-width: 530px) {
+
+  .page-design__llama--full-page img {
+    width: 50px;
+  }
+}
+
+.page-design__llama-score {
+  font-size: 2rem;
+  display: inline-block;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
 .page-design--light-blue {
   background-color: #e6f2ff
 }
@@ -2294,9 +2317,6 @@ Third image is 600px*/
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	
-
-
 	text-align: center;
 	
 }
@@ -2331,6 +2351,36 @@ Third image is 600px*/
 
   .top-links a:hover span {
     border-bottom: 4px solid rgb(255, 162, 0);
+  }
+}
+
+.top-links--full-page {
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	
+}
+
+@media(min-width: 800px) {
+
+  .top-links--full-page {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
